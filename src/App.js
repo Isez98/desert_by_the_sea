@@ -5,27 +5,19 @@ import './designer.css';
 
 //Components
 import MenuItem from './Components/MenuItem';
-
+import MenuList from './Components/MenuList';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">              
       <img class="logo"  src={require('./Resources/desert_by_the_sea_logo.png')}/> 
-    <div class = "containerBar text mainText">
-        <MenuItem></MenuItem>
-        <a href="condos.php">
-            <div class = "travelBar" >           
-                CONDOS
-            </div>
-        </a>
-        <div class = "travelBar">
-            ABOUT US
-        </div>
-        <div class="travelBar">
-            CONTACT
-        </div>
-    </div>
+    <MenuList>
+        <MenuItem text='HOME'></MenuItem>        
+        <MenuItem text='CONDOS'></MenuItem>        
+        <MenuItem text='ABOUT US'></MenuItem>
+        <MenuItem text='CONTACT'></MenuItem>
+    </MenuList>
     <div class= "Main Body">
         <div>
             <img class="mainPicture"  src={require('./Resources/Penasco.jpg')}/> 

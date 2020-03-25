@@ -1,9 +1,9 @@
 import React from 'react';
 
-const MenuItem = () => {
+const MenuItem = ({text}) => {
     return (
         <div class = "travelBar">            
-             HOME
+             {text}
          </div >
     )
  }
