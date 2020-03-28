@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const MenuItem = ({text}) => {
+const MenuItem = (props) => {
     return (
         <div class = "travelBar" >            
-           <Link to={"/"+{text}}  >{text}</Link>  
+           <Link to={props.path}  >{props.text}</Link>  
          </div >
     )
  }
