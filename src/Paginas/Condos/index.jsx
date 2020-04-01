@@ -1,5 +1,6 @@
 import React from 'react';
 import  ImageGallerys from '../../Components/ImageGallerys'
+import '../../App.css';
 
 
 function Condos() {

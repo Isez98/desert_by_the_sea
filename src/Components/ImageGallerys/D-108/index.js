@@ -1,36 +1,50 @@
 import React from 'react';
-import { render } from 'react-dom';
+import axios from 'axios';
 import Gallery from 'react-grid-gallery';
 
 class D108 extends React.Component {
-
-    render () {
-        const IMAGES =
-        [{
-                src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
-                thumbnail: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg",
-                thumbnailWidth: 320,
-                thumbnailHeight: 174,
-                caption: "After Rain (Jeshu John - designerspics.com)"
-        },
-        {
-                src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
-                thumbnail: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
-                thumbnailWidth: 320,
-                thumbnailHeight: 212,
-                caption: "Boats (Jeshu John - designerspics.com)"
-        },
-
-        {
-                src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
-                thumbnail: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
-                thumbnailWidth: 320,
-                thumbnailHeight: 212
-        }]
-
+    constructor() {
+        super();
+        this.state = {
+            images: []
+        };
+    }
+    componentWillMount() {
+       fetchImages().then(images => {
+        this.setState({images})
+       })
+         
+        // =  await fetchImages();
+    }
+    render () {   
         return(
-                <Gallery images={IMAGES}/>
+                <Gallery images= {this.state.images}/>
         );
     }
 }
+//Estudiar  promises and callbacks
+async function fetchImages () {
+    
+    return axios
+    .get('https://pixabay.com/api/?key=15834751-342e9baf90a57d34e236a6890&image_type=photo&q=beach+front&per_page=12')
+    .then(response => {
+        console.log(response);
+      return response.data.hits.map((product, i) => ({
+        id: product.id,
+        src: product.largeImageURL,
+        thumbnail: product.previewURL,
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+        caption: "2 room condominium."
+      }))
+    })
+    .then(condominums => {
+        console.log({condominums});
+        return condominums
+    })
+    .catch(error => {
+      if (error) throw new Error(error)
+    })
+}
+
 export default D108;
