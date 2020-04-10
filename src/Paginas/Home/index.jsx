@@ -1,21 +1,27 @@
 import React from 'react';
+import '../../App.css';
+import textContent from './textContent';
 
-function Home() {
+function Home(props) {
+    //console.log(props);
+    let lang = props.hash;
+    
     return (
-        <div class="Main Body">
-            <div>
-                <img
-                    class="mainPicture"
-                    src={require('../../Resources/Penasco.jpg')}
-                    alt="Home Page Capture Of Rocky Point" />
-                <h3 class="greeting homeText">Welcome to Desert By The Sea's Website!</h3>
-                <p class="paragraph homeText">
-                    Desert By The Sea Rentals is a condominium rental and managment company. We offer quality condos at accessible prices.
-                    Our installations at Princesa De Peñasco have pool and beach access, along with a nearby restaurant/bar. We offer both single and
-                    double bedrooms along with bathrooms.
-            </p>
+        <div>      
+            <div className="hero flex-center">
+                <div className="hero-message">
+                    <h1 className="hero-title">{textContent[lang].title}</h1>
+                    <h2 className="hero-sub-title">{textContent[lang].subTitle}</h2>
+                </div>    
             </div>
-        </div>
+            <section>
+                <img className='condoLogos' src="../../Resources/Condo_Photos/pdp_logo.png" alt=""></img>
+                <h2>{textContent[lang].developments}</h2>
+            </section>
+            <section className="section left-text">
+                <h2 >{textContent[lang].headingWhy}</h2>
+            </section>
+        </div>  
     );
 }
 

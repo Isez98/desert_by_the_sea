@@ -1,37 +1,59 @@
 import React from 'react';
 import './App.css';
-import './designer.css';
 
 //React-Router
 import {
     BrowserRouter as Router,
     Switch,
-    Route,
+    Route
 } from "react-router-dom";
 
 //Components
 import MenuItem from './Components/MenuItem';
 import MenuList from './Components/MenuList';
+import HeaderLogo from './Components/HeaderLogo';
 
 //Paginas
 import Paginas from './Paginas'
 
-function App() {
+//Idiomas
+import textContent from './textContent';
+
+let detectLang = function (name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, '\\#');
+    var regex = new RegExp('[#]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+};
+
+let lang = function() {
+    if(detectLang('lang', '') !== null) {     
+        return detectLang('lang', '');
+    }else {        
+        return navigator.language;
+    }    
+};
+
+window.location.hash = `lang=${lang()}`;
+function App() {    
     return (
         <div className="App">
             <Router>
                 <header className="App-header">
-                    <img
-                        className="logo"
-                        src={require('./Resources/desert_by_the_sea_logo.png')}
-                        alt="Logo of Desert By The Sea" />
-
-                    <MenuList>
-                        <MenuItem text='Home' path="/" ></MenuItem>
-                        <MenuItem text='Condos' path="/condos"></MenuItem>
-                        <MenuItem text='About' path="/about"></MenuItem>
-                        <MenuItem text='Contact' path="/contact"></MenuItem>
-                    </MenuList>
+                    <div className='containerBar'>
+                        <HeaderLogo path='/'></HeaderLogo>
+                        <div className='menuList'>
+                            <MenuList> 
+                                <MenuItem text={textContent[lang()].home} path="/" ></MenuItem>
+                                <MenuItem text={textContent[lang()].condos} path="/condos"></MenuItem>
+                                <MenuItem text={textContent[lang()].about} path="/about"></MenuItem>
+                                <MenuItem text={textContent[lang()].contact} path="/contact"></MenuItem>
+                            </MenuList>
+                        </div>
+                    </div>
                 </header>
                 <Switch>
                     <Route path="/condos">
@@ -43,8 +65,8 @@ function App() {
                     <Route path="/contact">
                         <Paginas.Contact />
                     </Route>
-                    <Route path="/">
-                        <Paginas.Home />
+                    <Route path={`/`}>
+                        <Paginas.Home hash={lang()} />
                     </Route>
                 </Switch>
             </Router>
