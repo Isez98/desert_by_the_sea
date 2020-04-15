@@ -4,8 +4,7 @@ import textContent from './textContent';
 
 function Home(props) {
     //console.log(props);
-    let lang = props.hash;
-    
+    let lang = props.hash;    
     return (
         <div>      
             <div className="hero flex-center">
@@ -15,11 +14,23 @@ function Home(props) {
                 </div>    
             </div>
             <section>
-                <img className='condoLogos' src="../../Resources/Condo_Photos/pdp_logo.png" alt=""></img>
-                <h2>{textContent[lang].developments}</h2>
+                <div className="development-section">
+                    <div className="devLogoContainer">
+                        <img className='condoLogos' src={require("../../Resources/Condo_Photos/pdp_logo.png")} alt=""></img>
+                    </div> 
+                   <subTitle>{textContent[lang].developments}</subTitle>
+                </div>
             </section>
-            <section className="section left-text">
-                <h2 >{textContent[lang].headingWhy}</h2>
+            <section className="section">
+                <div className="section-container">
+                    <div className='left-text'>
+                        <h2 >{textContent[lang].headingWhy}</h2>
+                        <p className="section-paragraph">{textContent[lang].paragraphWhy}</p>
+                    </div>
+                    <div className='rightSide'>
+                        <img className='sectionImages' src={require("../../Resources/Condo_Photos/d-108/1.jpeg")} alt=""></img>
+                    </div>
+                </div>
             </section>
         </div>  
     );

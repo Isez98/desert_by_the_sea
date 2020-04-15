@@ -6,9 +6,9 @@ import '../../App.css';
 function Condos() {
     return (
         <div class="Main Body">
-            <h1>Condos</h1>
-            <h3>Dos Habitaciones, Dos Baños</h3> 
-            <ImageGallerys></ImageGallerys>
+            <h1 className="text greeting">Condos</h1>
+            <h3 className="text paragraph center">Dos Habitaciones, Dos Baños</h3> 
+            <ImageGallerys className="gallery"></ImageGallerys>
         </div>
     );
 }

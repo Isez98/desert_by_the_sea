@@ -21,7 +21,7 @@ import textContent from './textContent';
 
 let detectLang = function (name, url) {
     if (!url) url = window.location.href;
-    name = name.replace(/[\[\]]/g, '\\#');
+    name = name.replace(/[[\]]/g, '\\#');
     var regex = new RegExp('[#]' + name + '(=([^&#]*)|&|#|$)'),
         results = regex.exec(url);
     if (!results) return null;
@@ -30,13 +30,11 @@ let detectLang = function (name, url) {
 };
 
 let lang = function() {
-    if(detectLang('lang', '') !== null) {     
-        return detectLang('lang', '');
-    }else {        
+    if(detectLang('lang', '') == null) {   
         return navigator.language;
-    }    
+    }
+    return detectLang('lang', '');        
 };
-
 window.location.hash = `lang=${lang()}`;
 function App() {    
     return (
@@ -44,13 +42,13 @@ function App() {
             <Router>
                 <header className="App-header">
                     <div className='containerBar'>
-                        <HeaderLogo path='/'></HeaderLogo>
+                        <HeaderLogo path={`/${window.location.hash}`}></HeaderLogo>
                         <div className='menuList'>
                             <MenuList> 
-                                <MenuItem text={textContent[lang()].home} path="/" ></MenuItem>
-                                <MenuItem text={textContent[lang()].condos} path="/condos"></MenuItem>
-                                <MenuItem text={textContent[lang()].about} path="/about"></MenuItem>
-                                <MenuItem text={textContent[lang()].contact} path="/contact"></MenuItem>
+                                <MenuItem text={textContent[lang()].home} path={`/`} ></MenuItem>
+                                <MenuItem text={textContent[lang()].condos} path={`/condos`}></MenuItem>
+                                <MenuItem text={textContent[lang()].about} path={`/about`}></MenuItem>
+                                <MenuItem text={textContent[lang()].contact} path={`/contact`}></MenuItem>
                             </MenuList>
                         </div>
                     </div>
@@ -60,7 +58,7 @@ function App() {
                         <Paginas.Condos />
                     </Route>
                     <Route path="/about">
-                        <Paginas.About />
+                        <Paginas.About hash={lang()}/>
                     </Route>
                     <Route path="/contact">
                         <Paginas.Contact />

@@ -32,6 +32,10 @@
   
 }
 
+.img {
+    border-style: none;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -132,11 +136,7 @@
 h2 {
     font-size: 2.5rem;
     font-weight: normal;
-}
-
-.left-text {
-    text-align: left;
-    padding-left: 14rem;
+    margin: 1rem;
 }
 
 .gallery {
@@ -229,10 +229,58 @@ h2 {
 }
 
 .section {
-    max-height: 1200px;
+    min-height: 60vmin;
+    margin-top: 10vmin;
+    align-items: center;
+    width: 100%;
+    display: inline-block;
+    color: black;
+}
+
+.development-section {
+    display: inline-table;
+}
+
+.section-paragraph {
+    max-width: 60rem;
+    text-align: justify;
+    font-size: 1.28rem !important;
+}
+
+.section-container {
+    width: 80%;
+    align-content: center;
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    padding-right: 24px;
+}
+
+.left-text {
+    text-align: justify;
+    padding-left: initial;
+    font-size: 16 !important;
+    max-width: 60vmin;
+    /* padding-left: 10rem; */
 }
 
 .condoLogos {
-    width: 20;
-    height: 15;
+    max-height: 15vmin;
 }
+
+.devLogoContainer {
+    width: 100%;
+}
+
+.rightSide {
+    
+}
+
+.sectionImages {
+    position: relative;
+    max-height: 350px;
+    align-items: center;
+    margin-left: 40vmin;
+}
+

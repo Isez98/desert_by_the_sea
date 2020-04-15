@@ -1,10 +1,13 @@
 import React from 'react';
+import '../../App.css';
+import textContent from './textContent';
 
-function About() {
-    return (
+function About(props) {
+    let lang = props.hash;
+    return (        
         <div class="Main Body">
-            <h1>About</h1>
-            <p>Desert By The Sea is owned and operated by Zaadia Marquez and Humberto Hernandez</p>
+            <h1 className="text greeting">{textContent[lang].title}</h1>
+            <p className="text paragraph center" >{textContent[lang].paragraph}</p>
         </div>
     );
 }

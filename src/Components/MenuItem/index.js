@@ -1,11 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom'
+import '../../App.css'
 
 const MenuItem = (props) => {
+    const history = useHistory();
+  
+    function handleClick() {
+      history.push(props.path);
+    }
     return (
-        <div class = "travelBar" >            
-           <Link to={props.path}  >{props.text}</Link>  
-         </div >
+        <div className = "travelBar travelBarText" onClick={handleClick}> {props.text}   
+         </div>
     )
  }
  export default MenuItem

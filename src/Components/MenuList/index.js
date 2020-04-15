@@ -1,10 +1,11 @@
 import React from 'react'
+import '../../App.css';
 
 const MenuList = ({children}) => {
     return (
-        <div class = "containerBar text mainText">            
+        <div>            
              {children}
-         </div >
+         </div>
     )
  }
  export default MenuList
