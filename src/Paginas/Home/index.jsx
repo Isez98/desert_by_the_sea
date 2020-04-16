@@ -13,8 +13,8 @@ function Home(props) {
                     <h2 className="hero-sub-title">{textContent[lang].subTitle}</h2>
                 </div>    
             </div>
-            <section>
-                <div className="development-section">
+            <section className="development-section">
+                <div>
                     <div className="devLogoContainer">
                         <img className='condoLogos' src={require("../../Resources/Condo_Photos/pdp_logo.png")} alt=""></img>
                     </div> 
@@ -27,9 +27,20 @@ function Home(props) {
                         <h2 >{textContent[lang].headingWhy}</h2>
                         <p className="section-paragraph">{textContent[lang].paragraphWhy}</p>
                     </div>
-                    <div className='rightSide'>
-                        <img className='sectionImages' src={require("../../Resources/Condo_Photos/d-108/1.jpeg")} alt=""></img>
+                    <div className="imageContainer">
+                        <img className='sectionImageRight' src={require("../../Resources/Condo_Photos/d-108/1.jpeg")} alt=""></img>
                     </div>
+                </div>
+            </section>
+            <section className="section">
+                <div className="section-container">
+                    <div>
+                        <img className='sectionImageLeft' src={require("../../Resources/Condo_Photos/d-108/3.jpeg")} alt=""></img>
+                    </div>
+                    <div className='right-text'>
+                        <h2 >{textContent[lang].headingMan}</h2>
+                        <p className="section-paragraph">{textContent[lang].paragraphMan}</p>
+                    </div>                    
                 </div>
             </section>
         </div>  
