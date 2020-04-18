@@ -9,6 +9,33 @@
   }
 }
 
+@media only screen and (max-width: 1450px) {
+    .sectionImageRight {
+        height: 350px;
+        width: 450px;
+        align-items: center;
+    }
+
+    .sectionImageLeft {
+        height: 350px;
+        width: 450px;
+        align-items: center;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+
+    .sectionImageRight {
+        height: 200px;
+        width: 300px;
+    }
+
+    .sectionImageLeft {
+        height: 200px;
+        width: 300px;
+    }
+  }
+
 .App {
   text-align: center;
   background-color: #fff;
@@ -46,8 +73,7 @@
 
 .containerBar {
     background-color: rgb( 97,173,206);
-    width: 100%;
-    display: inline-flex;    
+    width: 100%; 
     margin-bottom: 0%;
 }
 
@@ -82,7 +108,6 @@
 }
 
 .logo {
-    display: block;;
     max-width: 8%;
     max-height: 8%;
     min-width: 170px;
@@ -129,8 +154,8 @@
     width: 80%;    
 }
 
-.h1 {
-    font-size: larger;
+h1 {
+    font-size: 3rem;
 }
 
 h2 {
@@ -231,9 +256,8 @@ h2 {
 .section {
     min-height: 50vmin;
     margin-top: 10vmin;
-    align-items: center;
     width: 100%;
-    display: inline-block;
+    display: flex;
     color: black;
 }
 
@@ -249,12 +273,12 @@ h2 {
 
 .section-container {
     width: 80%;
-    align-content: center;
-    display: inline-flex;
+    justify-content: space-between;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     padding-left: 0px;
-    padding-right: 24px;
+    padding-right: 20px;
 }
 
 .left-text {
@@ -273,12 +297,15 @@ h2 {
     width: 100%;
 }
 
+.imageContainer {
+    align-self: stretch;    
+}
 
 .sectionImageRight {
-    position: relative;
-    max-height: 350px;
+    margin-left: 5em;
+    max-height: 500px;
+    max-width: 600px;
     align-items: center;
-    margin-left: 40vmin;
 }
 
 .right-text {
@@ -287,15 +314,33 @@ h2 {
     padding-right: initial;
     font-size: 16 !important;
     max-width: 60vmin;
-    /* padding-left: 10rem; */
 }
 
 .sectionImageLeft {
-    position: relative;
-    float: left;
-    max-height: 350px;
-    align-items: center;
-    margin-right: 40vmin; 
+    margin-right: 5em;
+    max-height: 500px;
+    max-width: 600px;
 }
 
+.footer-section {
+    display: flex;
+    padding-bottom: 4vmin;
+    background-color: rgb( 97,173,206);
+    justify-content: space-between;
+    font-size: 1.2rem;
+    
+}
 
+.footer-phone {
+    width: 40%;
+}
+
+.footer-company {
+    display: block;
+    width: 40%;
+    
+}
+
+.facebook-logo {
+    height: 50px;
+}

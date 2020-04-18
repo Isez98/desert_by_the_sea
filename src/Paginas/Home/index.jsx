@@ -34,7 +34,7 @@ function Home(props) {
             </section>
             <section className="section">
                 <div className="section-container">
-                    <div>
+                    <div className='imageContainer'>
                         <img className='sectionImageLeft' src={require("../../Resources/Condo_Photos/d-108/3.jpeg")} alt=""></img>
                     </div>
                     <div className='right-text'>

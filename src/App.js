@@ -2,22 +2,23 @@ import React from 'react';
 import './App.css';
 
 //React-Router
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route
-} from "react-router-dom";
+// import {
+//     BrowserRouter as Router,
+//     Switch,
+//     Route
+// } from "react-router-dom";
 
 //Components
-import MenuItem from './Components/MenuItem';
-import MenuList from './Components/MenuList';
-import HeaderLogo from './Components/HeaderLogo';
+// import MenuItem from './Components/MenuItem';
+// import MenuList from './Components/MenuList';
+ import HeaderLogo from './Components/HeaderLogo';
+ import Footer from './Components/Footer';
 
 //Paginas
 import Paginas from './Paginas'
 
 //Idiomas
-import textContent from './textContent';
+//import textContent from './textContent';
 
 let detectLang = function (name, url) {
     if (!url) url = window.location.href;
@@ -35,39 +36,20 @@ let lang = function() {
     }
     return detectLang('lang', '');        
 };
-window.location.hash = `lang=${lang()}`;
+
+let pageLang = lang();
+window.location.hash = `lang=${pageLang}`;
+
 function App() {    
     return (
         <div className="App">
-            <Router>
                 <header className="App-header">
                     <div className='containerBar'>
                         <HeaderLogo path={`/${window.location.hash}`}></HeaderLogo>
-                        <div className='menuList'>
-                            <MenuList> 
-                                <MenuItem text={textContent[lang()].home} path={`/`} ></MenuItem>
-                                <MenuItem text={textContent[lang()].condos} path={`/condos`}></MenuItem>
-                                <MenuItem text={textContent[lang()].about} path={`/about`}></MenuItem>
-                                <MenuItem text={textContent[lang()].contact} path={`/contact`}></MenuItem>
-                            </MenuList>
-                        </div>
                     </div>
                 </header>
-                <Switch>
-                    <Route path="/condos">
-                        <Paginas.Condos />
-                    </Route>
-                    <Route path="/about">
-                        <Paginas.About hash={lang()}/>
-                    </Route>
-                    <Route path="/contact">
-                        <Paginas.Contact />
-                    </Route>
-                    <Route path={`/`}>
-                        <Paginas.Home hash={lang()} />
-                    </Route>
-                </Switch>
-            </Router>
+                <Paginas.Home hash={pageLang}></Paginas.Home>
+                <Footer hash={pageLang}></Footer>
         </div>
     );
 }
