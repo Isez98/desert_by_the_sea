@@ -18,7 +18,7 @@ function Home(props) {
                     <div className="devLogoContainer">
                         <img className='condoLogos' src={require("../../Resources/Condo_Photos/pdp_logo.png")} alt=""></img>
                     </div> 
-                   <subTitle>{textContent[lang].developments}</subTitle>
+                   <subTitle className="subTitle">{textContent[lang].developments}</subTitle>
                 </div>
             </section>
             <section className="section">
