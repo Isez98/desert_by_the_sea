@@ -10,7 +10,7 @@ let es = {
     condos: 'Condos',
     about: 'Acerca De',
     contact: 'Contacto',
-    announcement: `Página en construcción... ¡Más fotos vienen en camino!`
+    announcement: `Página en construcción... ¡Próximamente más fotos!`
 }
 export default {
     default: en,

@@ -12,7 +12,7 @@ function Home(props) {
                     <h1 className="hero-title">{textContent[lang].title}</h1>
                     <h2 className="hero-sub-title">{textContent[lang].subTitle}</h2>
                 </div>    
-            </div>
+            </div> 
             <section className="development-section">
                 <div>
                     <div className="devLogoContainer">
@@ -24,8 +24,8 @@ function Home(props) {
             <section className="section">
                 <div className="section-container">
                     <div className='left-text'>
-                        <h2 >{textContent[lang].headingWhy}</h2>
-                        <p className="section-paragraph">{textContent[lang].paragraphWhy}</p>
+                    <h2 >{textContent[lang].headingMan}</h2>
+                    <p className="section-paragraph">{textContent[lang].paragraphMan}</p>
                     </div>
                     <div className="imageContainer">
                         <img className='sectionImageRight' src={require("../../Resources/Condo_Photos/d-108/1.jpeg")} alt=""></img>
@@ -38,8 +38,13 @@ function Home(props) {
                         <img className='sectionImageLeft' src={require("../../Resources/Condo_Photos/d-108/3.jpeg")} alt=""></img>
                     </div>
                     <div className='right-text'>
-                        <h2 >{textContent[lang].headingMan}</h2>
-                        <p className="section-paragraph">{textContent[lang].paragraphMan}</p>
+                        <h2 >{textContent[lang].headingWhy}</h2>
+                        <ul className="section-paragraph"> 
+                            <li>{textContent[lang].listWhy.deal}</li>
+                            <li>{textContent[lang].listWhy.rates}</li>
+                            <li>{textContent[lang].listWhy.honesty}</li>
+                            <li>{textContent[lang].listWhy.location}</li>
+                        </ul>
                     </div>                    
                 </div>
             </section>
