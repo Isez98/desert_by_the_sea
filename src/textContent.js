@@ -2,14 +2,15 @@ let en = {
     home: 'Home',
     condos: 'Condos',
     about: 'About',
-    contact: 'Contact'
-    
+    contact: 'Contact',
+    announcement: `Page in construction... More photos coming soon!`
 }
 let es = {
     home: 'Inicio',
     condos: 'Condos',
     about: 'Acerca De',
-    contact: 'Contacto'
+    contact: 'Contacto',
+    announcement: `Página en construcción... ¡Más fotos vienen en camino!`
 }
 export default {
     default: en,

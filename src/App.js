@@ -18,7 +18,7 @@ import './App.css';
 import Paginas from './Paginas'
 
 //Idiomas
-//import textContent from './textContent';
+import textContent from './textContent';
 
 let detectLang = function (name, url) {
     if (!url) url = window.location.href;
@@ -43,11 +43,12 @@ window.location.hash = `lang=${pageLang}`;
 function App() {    
     return (
         <div className="App">
-                <header className="App-header">
+                <div className="App-header">
                     <div className='containerBar'>
                         <HeaderLogo path={`/${window.location.hash}`}></HeaderLogo>
-                    </div>
-                </header>
+                    </div>                    
+                    <div className='announcement'>{textContent[pageLang].announcement}</div>
+                </div>
                 <Paginas.Home hash={pageLang}></Paginas.Home>
                 <Footer hash={pageLang}></Footer>
         </div>

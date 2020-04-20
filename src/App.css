@@ -27,11 +27,15 @@
         min-height: 900px;
         background-color: #d59241;
     }
-
-
 }
 
 @media only screen and (max-width: 1450px) {
+
+    .announcement {
+        height: 3rem !important;
+        line-height: 1.75rem !important;
+    }
+
     .hero {
         background-image: url('../src/Resources/Condo_Photos/pdp_1200x900.jpg');
         min-height: 900px;
@@ -68,6 +72,10 @@
 
 @media only screen and (max-width: 1100px){
 
+    .announcement {
+        height: 3rem !important;
+        line-height: 1.25rem !important;
+    }
     .hero {
         background-image: url('../src/Resources/Condo_Photos/pdp_1100x900.jpg');
         min-height: 900px;
@@ -121,7 +129,9 @@
 
 /*  Most phones (horizontal) */
 @media only screen and (max-width: 750px) {
-
+    .announcement {
+    line-height: 1rem;
+    }
     .hero {
         background-image: url('../src/Resources/Condo_Photos/pdp_MobileVertical.jpg');
         min-height: 600px;
@@ -200,7 +210,7 @@
 
     .footer-phone {
         width: 80% !important;
-        margin-bottom: 1rem; 
+        margin-bottom: .5rem; 
         margin-left: 1rem;  
              
     }
@@ -331,9 +341,8 @@
 
 .App-header {
   background-color: transparent;
-  display: inline-block;
   font-size: calc(10px + 2vmin);
-  
+  overflow: hidden;
 }
 
 .img {
@@ -349,10 +358,32 @@
 }
 
 .containerBar {
+    position: relative;
+    top: 0;
+    z-index: 1;
     background-color: rgb( 97,173,206);
     width: 100%; 
     margin-bottom: 0%;
 }
+
+.announcement {
+    position: relative;
+    height: 2.5rem !important;
+    top: 0px;
+    z-index: 0;
+    background-color: rgb( 97,173,206);
+/*    animation-name: showMessage;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+*/
+}
+
+@keyframes showMessage {
+    from {top: -70px;}
+    to {top: 0px}
+}
+
 
 .menuList {
     width: 100%;
@@ -459,7 +490,16 @@ h2 {
 .hero {
     position: relative;
     opacity: 0.9;
-    top: -7px;
+    top: -3rem;
+    animation-name: heroMove;
+    animation-duration: 3s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes heroMove {
+    from {top: -3rem;}
+    to {top: 0rem}
 }
 
 .hero::before {
@@ -591,7 +631,7 @@ h2 {
 }
 
 .footer{
-    padding-bottom: 4vmin;
+    padding-bottom: 1.5vmin;
     background-color: rgb( 97,173,206);
     font-size: 1.2rem;
     text-align: left;
@@ -600,7 +640,7 @@ h2 {
 .footer-section {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1rem;
+    margin-bottom: .25rem;
 }
 
 .footer-phone {
