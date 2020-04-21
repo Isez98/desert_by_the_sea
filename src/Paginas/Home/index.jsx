@@ -26,6 +26,14 @@ function Home(props) {
                     <div className='left-text'>
                     <h2 >{textContent[lang].headingMan}</h2>
                     <p className="section-paragraph">{textContent[lang].paragraphMan}</p>
+                    <ul className="princesa-list">
+                        <li>{textContent[lang].listPrincesa.security}</li>
+                        <li>{textContent[lang].listPrincesa.parking}</li>
+                        <li>{textContent[lang].listPrincesa.restaurant}</li>
+                        <li>{textContent[lang].listPrincesa.gym}</li>
+                        <li>{textContent[lang].listPrincesa.pool}</li>
+                        <li>{textContent[lang].listPrincesa.grill}</li>
+                    </ul>
                     </div>
                     <div className="imageContainer">
                         <img className='sectionImageRight' src={require("../../Resources/Condo_Photos/d-108/1.jpeg")} alt=""></img>
@@ -33,7 +41,7 @@ function Home(props) {
                 </div>
             </section>
             <section className="section">
-                <div className="section-container">
+                <div className="section-container last-container">
                     <div className='imageContainer'>
                         <img className='sectionImageLeft' src={require("../../Resources/Condo_Photos/d-108/3.jpeg")} alt=""></img>
                     </div>

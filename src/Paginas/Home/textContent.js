@@ -9,8 +9,16 @@ let en = {
         honesty: 'Honesty: We believe that honesty builds great relations with our clients',
         location: 'Great location: Our condos are all located at a walking distance to the beach'
     },
-    headingMan: 'Direct contact with the manager',
-    paragraphMan: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.'
+    headingMan: 'What Princesa Offers',
+    paragraphMan: 'Princesa De Peñasco offers quality condos close to Sandy Beach. Their installations are equipped to satisfy their clients\' needs during their stay.',
+    listPrincesa: {
+        security: '24 hour security',
+        parking: 'Parking',
+        restaurant: 'Restaurant bar "Collin\'s"',
+        gym: 'Gym',
+        pool: '1 adult pool/bar, 2 pools, 2 kiddie pools and 1 jacuzzi',
+        grill: 'Public barbecue grills',
+    }
     
 }
 let es = {

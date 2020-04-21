@@ -53,20 +53,33 @@
         background-color: #d59241;
     }
 
+    h2 {
+        font-size: 2.25rem !important;
+    }
     .right-text {
-        font-size: 14 !important;
+        font-size: 1.7rem !important;
+    }
+
+    .princesa-list {
+        font-size: 1.3rem !important;
+    }
+
+    .section-paragraph {
+        font-size: 1.35rem !important;
     }
 
     .sectionImageRight {
         height: 350px;
         width: 450px;
         align-items: center;
+        padding-top: 3rem;
     }
 
     .sectionImageLeft {
         height: 350px;
         width: 450px;
         align-items: center;
+        padding-top: 1rem;
     }
 }
 
@@ -95,7 +108,7 @@
     }
 
     .right-text {
-        font-size: 14 !important;
+        font-size: 1.5rem !important;
     }
     .section-container {
         display: block !important;
@@ -105,8 +118,9 @@
         margin-left: 0 !important;
         margin-top: 2rem !important;
         align-self: center !important;
-        height: 520px;
-        width: 550px;
+        padding-top: 0 !important;
+        height: 570px !important;
+        width: 590px !important;
     }
 
     .sectionImageLeft {
@@ -117,14 +131,27 @@
         width: 100% !important;
     }
 
+    h2 {
+        font-size: 2.25rem !important;
+    }
+
     .left-text {
         max-width: 100% !important;
         text-align: left !important;
+        font-size: 2rem !important;
+    }
+
+    .princesa-list {
+        font-size: 1.7rem !important;
     }
 
     .right-text {
         max-width: 100% !important;
         text-align: left !important;
+    }
+    
+    .section-paragraph {
+        font-size: 1.8rem !important;
     }
 }
 
@@ -183,8 +210,9 @@
         margin-left: 0 !important;
         margin-top: 2rem !important;
         align-self: center !important;
-        height: 220px;
-        width: 250px;
+        height: 340px !important;
+        width: 360px !important;
+        padding-top: 0 !important;
     }
 
     .sectionImageLeft {
@@ -203,6 +231,10 @@
     .right-text {
         max-width: 100% !important;
         text-align: left !important;
+    }
+
+    .last-container {
+        margin-bottom: 0 !important;
     }
 
     .footer-section {
@@ -250,11 +282,11 @@
 
     .hero-title {
         margin: 5% 0 !important;
-        font-size: 1.9rem;
+        font-size: 1.5rem !important;
     }
 
     .hero-sub-title {
-        font-size: 1.5rem;
+        font-size: 1.25rem !important;
         text-shadow: #343a40 2px 2px;
         width: 85% !important;
         padding-left: 1.5rem;
@@ -263,11 +295,12 @@
 
     .subTitle {
         width: 100%;
-        margin-right: 2rem;
+        margin-right: .25rem;
+        font-size: .75rem;
     }
 
     h2 {
-        font-size: 1.75rem !important;
+        font-size: 1.5rem !important;
     }
 
     .section-paragraph {
@@ -284,6 +317,7 @@
         align-self: center !important;
         height: 220px;
         width: 250px;
+        padding-top: 0 !important;
     }
 
     .sectionImageLeft {
@@ -297,6 +331,11 @@
     .left-text {
         max-width: 100% !important;
         text-align: left !important;
+        font-size: 1rem;
+    }
+
+    .princesa-list {
+        font-size: .95rem !important;
     }
 
     .right-text {
@@ -304,27 +343,33 @@
         text-align: left !important;
     }
 
+    .section-paragraph {
+        font-size: 1rem !important;
+    }
+
     .footer-section {
         display: block !important;
-        font-size: 1rem !important;        
+        font-size: .75rem !important;        
     }
 
     .footer-phone {
         width: 80% !important;
-        margin-bottom: 1rem; 
-        margin-left: 1rem;  
-             
+        margin-bottom: 1rem;              
     }
 
     .footer-company {
         width: 80% !important;
         margin-left: 1rem; 
-        font-size: 1rem !important;
+        font-size: .75rem !important;
     }
 
     .footer-social {
         width: 80% !important;
-        margin-left: 1rem; 
+        margin-left: 1.7rem; 
+    }
+
+    .facebook-logo {
+        height: 20px !important;
     }
 }
 
@@ -490,11 +535,11 @@ h2 {
 .hero {
     position: relative;
     opacity: 0.9;
-    top: -3rem;
-    animation-name: heroMove;
+    top: -.75rem; /* -3 rem with announcment enabled */
+   /* animation-name: heroMove;
     animation-duration: 3s;
     animation-delay: 2.5s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 
 @keyframes heroMove {
@@ -577,7 +622,7 @@ h2 {
 .section-paragraph {
     max-width: 60rem;
     text-align: justify;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 .section-container {
@@ -595,6 +640,10 @@ h2 {
     padding-left: initial;
     max-width: 60vmin;
     /* padding-left: 10rem; */
+}
+
+.princesa-list {
+    font-size: 1.5rem;
 }
 
 .condoLogos {
@@ -628,6 +677,10 @@ h2 {
     margin-right: 5em;
     max-height: 500px;
     max-width: 600px;
+}
+
+.last-container {
+    margin-bottom: 3rem;
 }
 
 .footer{
