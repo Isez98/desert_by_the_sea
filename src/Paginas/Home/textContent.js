@@ -34,6 +34,14 @@ let es = {
     },
     headingMan: 'Lo que ofrece Princesa',
     paragraphMan: 'Princesa de Peñasco ofrece condominios de calidad cerca de la playa. Sus instalaciones están equipados para satisfacer las necesidades de sus clientes durante su estancia.'
+    listPrincesa: {
+        security: 'Seguridad de 24 horas',
+        parking: 'Estacionamiento',
+        restaurant: 'Restaurante bar "Collin\'s"',
+        gym: 'Gimnasio',
+        pool: '1 alberca/bar para adultos, 2 albercas, 2 albercas para niños y 1 jacuzzi',
+        grill: 'Asadores comunitarios fijos',
+    }
 }
 export default {
     default: en,
