@@ -18,7 +18,7 @@ function Home(props) {
                     <div className="devLogoContainer">
                         <img className='condoLogos' src={require("../../Resources/Condo_Photos/pdp_logo.png")} alt=""></img>
                     </div> 
-                   <subTitle className="subTitle">{textContent[lang].developments}</subTitle>
+                   <subtitle className="subTitle">{textContent[lang].developments}</subtitle>
                 </div>
             </section>
             <section className="section">
@@ -26,14 +26,20 @@ function Home(props) {
                     <div className='left-text'>
                     <h2 >{textContent[lang].headingMan}</h2>
                     <p className="section-paragraph">{textContent[lang].paragraphMan}</p>
-                    <ul className="princesa-list">
-                        <li>{textContent[lang].listPrincesa.security}</li>
-                        <li>{textContent[lang].listPrincesa.parking}</li>
-                        <li>{textContent[lang].listPrincesa.restaurant}</li>
-                        <li>{textContent[lang].listPrincesa.gym}</li>
-                        <li>{textContent[lang].listPrincesa.pool}</li>
-                        <li>{textContent[lang].listPrincesa.grill}</li>
-                    </ul>
+                    <div className="princesa-list">
+                        <ul className="first-list">
+                            <li>{textContent[lang].listPrincesa.security}</li>
+                            <li>{textContent[lang].listPrincesa.parking}</li>
+                            <li>{textContent[lang].listPrincesa.restaurant}</li>
+                            <li>{textContent[lang].listPrincesa.pool}</li>                                               
+                        </ul>
+                        <ul className="second-list">
+                            <li>{textContent[lang].listPrincesa.gym}</li>
+                            <li>{textContent[lang].listPrincesa.grill}</li>
+                            <li>{textContent[lang].listPrincesa.store}</li>                            
+                            <li>{textContent[lang].listPrincesa.court}</li>
+                        </ul>
+                    </div>
                     </div>
                     <div className="imageContainer">
                         <img className='sectionImageRight' src={require("../../Resources/Condo_Photos/d-108/1.jpeg")} alt=""></img>

@@ -19,6 +19,8 @@ import Paginas from './Paginas'
 
 //Idiomas
 //import textContent from './textContent';
+const navLang = navigator.language.substr(0,2);
+console.log(navLang);
 
 let detectLang = function (name, url) {
     if (!url) url = window.location.href;
@@ -32,7 +34,7 @@ let detectLang = function (name, url) {
 
 let lang = function() {
     if(detectLang('lang', '') == null) {   
-        return navigator.language;
+        return navLang;
     }
     return detectLang('lang', '');        
 };

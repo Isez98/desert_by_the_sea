@@ -15,9 +15,12 @@ let en = {
         security: '24 hour security',
         parking: 'Parking',
         restaurant: 'Restaurant bar "Collin\'s"',
+        store: "Convenience Store",
         gym: 'Gym',
-        pool: '1 adult pool/bar, 2 pools, 2 kiddie pools and 1 jacuzzi',
         grill: 'Public barbecue grills',
+        pool: '1 adult pool/bar, 2 pools, 2 kiddie pools and 1 jacuzzi',
+        court: "Volleyball court in the sand",
+        
     }
     
 }
@@ -38,9 +41,12 @@ let es = {
         security: 'Seguridad de 24 horas',
         parking: 'Estacionamiento',
         restaurant: 'Restaurante bar "Collin\'s"',
+        store: "Tienda de conveniencia",
         gym: 'Gimnasio',
-        pool: '1 alberca/bar para adultos, 2 albercas, 2 albercas infantiles y 1 jacuzzi',
         grill: 'Asadores comunitarios fijos',
+        pool: '1 alberca/bar para adultos, 2 albercas, 2 albercas infantiles y 1 jacuzzi',
+        court: "Cancha de vóleibol en la arena",
+        
     }
 }
 export default {
