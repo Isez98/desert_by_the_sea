@@ -27,6 +27,40 @@
         min-height: 900px;
         background-color: #d59241;
     }
+
+    h2 {
+        font-size: 2.25rem !important;
+    }
+
+    .left-text{
+        max-width: 65vmin !important;
+    }
+
+    .right-text {
+        font-size: 1.7rem !important;
+    }
+
+    .princesa-list {
+        font-size: 1.3rem !important;
+    }
+
+    .section-two-list {
+        font-size: 1.70rem !important;
+    }
+
+    .sectionImageRight {
+        height: 450px !important;
+        width: 500px !important;
+        align-items: center;
+        padding-top: 3rem;
+    }
+
+    .sectionImageLeft {
+        height: 450px;
+        width: 500px;
+        align-items: center;
+        padding-top: 1rem;
+    }
 }
 
 @media only screen and (max-width: 1450px) {
@@ -61,11 +95,11 @@
     }
 
     .princesa-list {
-        font-size: 1.3rem !important;
+        font-size: 1rem !important;
     }
 
-    .section-paragraph {
-        font-size: 1.35rem !important;
+    .section-two-list {
+        font-size: 1.7rem !important;
     }
 
     .sectionImageRight {
@@ -79,7 +113,7 @@
         height: 350px;
         width: 450px;
         align-items: center;
-        padding-top: 1rem;
+        padding-top: 1.5rem;
     }
 }
 
@@ -143,15 +177,17 @@
 
     .princesa-list {
         font-size: 1.25rem !important;
+        position: relative;
     }
 
     .right-text {
         max-width: 100% !important;
         text-align: left !important;
     }
-    
-    .section-paragraph {
+
+    .section-two-list {
         font-size: 1.5rem !important;
+        text-align: left !important;
     }
 }
 
@@ -198,7 +234,7 @@
         font-size: 1.75rem !important;
     }
 
-    .section-paragraph {
+    .section-two-list {
         font-size: 1.25rem !important;
     }
 
@@ -307,10 +343,6 @@
         font-size: 1.5rem !important;
     }
 
-    .section-paragraph {
-        font-size: 1.25rem !important;
-    }
-
     .section-container {
         display: block !important;
     }
@@ -343,14 +375,14 @@
     }
 
     .first-list {
-        width: 8rem !important;
+        width: 10rem !important;
     }
     .right-text {
         max-width: 100% !important;
         text-align: left !important;
     }
 
-    .section-paragraph {
+    .section-two-list {
         font-size: 1rem !important;
     }
 
@@ -615,7 +647,6 @@ h2 {
 }
 
 .section {
-    min-height: 50vmin;
     margin-top: 10vmin;
     width: 100%;
     display: flex;
@@ -626,8 +657,8 @@ h2 {
     display: inline-table;
 }
 
-.section-paragraph {
-    max-width: 60rem;
+.section-two-list {
+    max-width: 70rem;
     text-align: justify;
     font-size: 1.7rem;
 }
@@ -650,7 +681,7 @@ h2 {
 }
 
 .princesa-list {
-    text-align: justify;
+    text-align: left !important;
     display: flex;
     font-size: 1.30rem;
 }
@@ -700,6 +731,14 @@ h2 {
     margin-bottom: 3rem;
 }
 
+.justify {
+    text-align: justify !important;
+    padding-inline-start: 20px !important;
+}
+
+.list-align {
+    text-align: left !important;
+}
 .footer{
     padding-bottom: 1.5vmin;
     background-color: rgb( 97,173,206);

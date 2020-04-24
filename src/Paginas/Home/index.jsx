@@ -25,19 +25,23 @@ function Home(props) {
                 <div className="section-container">
                     <div className='left-text'>
                     <h2 >{textContent[lang].headingMan}</h2>
-                    <p className="section-paragraph">{textContent[lang].paragraphMan}</p>
+                    <p className="section-two-list justify">{textContent[lang].paragraphMan}</p>
                     <div className="princesa-list">
                         <ul className="first-list">
                             <li>{textContent[lang].listPrincesa.security}</li>
                             <li>{textContent[lang].listPrincesa.parking}</li>
                             <li>{textContent[lang].listPrincesa.restaurant}</li>
-                            <li>{textContent[lang].listPrincesa.pool}</li>                                               
+                            <li>{textContent[lang].listPrincesa.adultPool}</li>
+                            <li>{textContent[lang].listPrincesa.pools}</li>
+                            <li>{textContent[lang].listPrincesa.kiddiePools}</li>                                               
                         </ul>
                         <ul className="second-list">
+                            <li>{textContent[lang].listPrincesa.jacuzzi}</li>
                             <li>{textContent[lang].listPrincesa.gym}</li>
                             <li>{textContent[lang].listPrincesa.grill}</li>
                             <li>{textContent[lang].listPrincesa.store}</li>                            
                             <li>{textContent[lang].listPrincesa.court}</li>
+                            <li>{textContent[lang].listPrincesa.palapas}</li>
                         </ul>
                     </div>
                     </div>
@@ -53,7 +57,7 @@ function Home(props) {
                     </div>
                     <div className='right-text'>
                         <h2 >{textContent[lang].headingWhy}</h2>
-                        <ul className="section-paragraph"> 
+                        <ul className="section-two-list list-align"> 
                             <li>{textContent[lang].listWhy.deal}</li>
                             <li>{textContent[lang].listWhy.rates}</li>
                             <li>{textContent[lang].listWhy.honesty}</li>

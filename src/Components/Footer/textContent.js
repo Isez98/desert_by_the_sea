@@ -8,7 +8,7 @@ let en = {
 let es = {
     phone: 'Contactanos por Whatsapp o SMS al +52 (638) 110 - 7587',
     company: 'Desert By The Sea Rentals',
-    social: 'Visita nuestros redes sociales:'
+    social: 'Visita nuestras redes sociales:'
 }
 
 export default {
