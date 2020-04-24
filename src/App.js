@@ -21,6 +21,7 @@ import Paginas from './Paginas'
 //import textContent from './textContent';
 const navLang = navigator.language.substr(0,2);
 console.log(navLang);
+console.log("Testing Continuous Deployment...");
 
 let detectLang = function (name, url) {
     if (!url) url = window.location.href;
