@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import Gallery from 'react-grid-gallery';
-import '../../../App.css'
+import '../../../App/App.css'
 
 class D108 extends React.Component {
     constructor() {

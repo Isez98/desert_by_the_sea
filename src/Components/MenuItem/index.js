@@ -1,6 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom'
-import '../../App.css'
+import '../../App/App.css'
 
 const MenuItem = (props) => {
     const history = useHistory();
@@ -9,7 +9,7 @@ const MenuItem = (props) => {
       history.push(props.path);
     }
     return (
-        <div className = "travelBar travelBarText" onClick={handleClick}> {props.text}   
+        <div className = "travelbar" onClick={handleClick}> {props.text}   
          </div>
     )
  }
