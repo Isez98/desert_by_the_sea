@@ -1,5 +1,5 @@
-* ![](https://github.com/Isez98/desert_by_the_sea/.github/workflows/integration.yml/badge.svg)
-* ![](https://github.com/Isez98/desert_by_the_sea/.github/workflows/deployment.yml/badge.svg?branch=master)
+![](https://github.com/Isez98/desert_by_the_sea/.github/workflows/integration.yml/badge.svg)
+![](https://github.com/Isez98/desert_by_the_sea/.github/workflows/deployment.yml/badge.svg?branch=master)
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
