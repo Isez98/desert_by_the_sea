@@ -1,0 +1,20 @@
+name: Integration
+
+on:
+  push # no matter what branch push code
+
+jobs:
+  lint:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Node v${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+
+    - name: npm install
+      run: npm ci
+
+    - name: lint
+      run: npm run lint
