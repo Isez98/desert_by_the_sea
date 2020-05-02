@@ -1,4 +1,4 @@
-name: Deployment To S3
+name: Deployment
 
 on:
   push:
@@ -25,7 +25,9 @@ jobs:
       run: npm run build
 
   deploy:
+    runs-on: ubuntu-18.04
     needs: lint-build
+    steps:
     - name: Deployment
       uses: ItsKarma/aws-cli@v1.70.0
       with:
