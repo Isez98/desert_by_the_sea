@@ -6,7 +6,7 @@ on:
       - master # deploy only when code is on master(production) branch
 
 jobs:
-  build:
+  lint-build:
     runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@v2
@@ -18,11 +18,14 @@ jobs:
     - name: npm install
       run: npm ci
 
+    - name: lint
+      run: npm run lint
+
     - name: build
       run: npm run build
 
   deploy:
-    needs: [lint, build]
+    needs: build-lint
     - name: Deployment
       uses: ItsKarma/aws-cli@v1.70.0
       with:
