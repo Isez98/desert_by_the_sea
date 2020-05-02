@@ -1,0 +1,13 @@
+aws_access_key = ""
+
+aws_secret_key = ""
+
+website_domain = "www.site.com"
+
+website_subdomain = "www"
+
+region = ""
+
+website_bucket_zone = "site.com."
+
+website_bucket_name = "www.site.com"
