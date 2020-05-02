@@ -25,6 +25,7 @@ jobs:
       run: npm run build
 
   deploy:
+    runs-on: ubuntu-18.04
     needs: lint-build
     - name: Deployment
       uses: ItsKarma/aws-cli@v1.70.0
