@@ -7,7 +7,7 @@ Commands executed are:
 ```
 npm ci
 npm run lint
-`****
+```
 if in your local fails then will fail CI step
 
 ## Deployment
