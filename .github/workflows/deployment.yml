@@ -1,34 +1,33 @@
-# name: Deployment To S3
+name: Deployment To S3
 
-# on:
-#   push:
-#     branches: [ master ]
-#   pull_request:
-#     branches: [ master ]
+on:
+  push:
+    branches:
+      - master # deploy only when code is on master(production) branch
 
-# jobs:
-#   build-and-deploy:
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Node v${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
 
-#     runs-on: ubuntu-18.04
+    - name: npm install
+      run: npm ci
 
-#     steps:
-#     - uses: actions/checkout@v2
-#     - name: Use Node.js ${{ matrix.node-version }}
-#       uses: actions/setup-node@v1
-#       with:
-#         node-version: '12.x'
+    - name: build
+      run: npm run build
 
-#     - name: Installing dependencies
-#       run: npm install
-
-#     - name: Building the application
-#       run: npm run build
-
-#     - name: S3 Deploy
-#       uses: ItsKarma/aws-cli@v1.70.0
-#       with:
-#         args: s3 sync --delete --acl public-read build/ s3://www.desertbythesearentals.com/
-#       env:
-#         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-#         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-#         AWS_DEFAULT_REGION: 'us-west-1'
+  deploy:
+    needs: [lint, build]
+    - name: Deployment
+      uses: ItsKarma/aws-cli@v1.70.0
+      with:
+        args: s3 sync --delete --acl public-read build/ s3://www.desertbythesearentals.com/
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        AWS_DEFAULT_REGION: 'us-west-1'
