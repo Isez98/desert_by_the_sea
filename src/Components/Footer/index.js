@@ -2,23 +2,27 @@ import React from 'react';
 import '../../App/App.css';
 import textContent from './textContent';
 import FacebookLogo from '../FacebookLogo';
+import propTypes from 'prop-types';
+
 const Footer = (props) => {
-    let lang = props.hash
-    return (
-        <div className="footer">
-            <div className="footer-section">
-                <div className="footer-phone">
-                    {textContent[lang].phone}
-                </div>
-                <div className='footer-social'>
-                    {textContent[lang].social}
-                    <FacebookLogo></FacebookLogo>
-                </div>                           
-            </div>
-            <div className='footer-company'>
-                {textContent[lang].company}
-            </div> 
+  const pageLang = props.hash;
+  return (
+    <div className="footer">
+      <div className="footer-section">
+        <div className="footer-phone">{textContent[pageLang].phone}</div>
+        <div className="footer-social">
+          {textContent[pageLang].social}
+          <FacebookLogo></FacebookLogo>
         </div>
-    )
-}
+      </div>
+      <div className="footer-company">{textContent[pageLang].company}</div>
+    </div>
+  );
+};
+
+Footer.propTypes = {
+  props: propTypes.object,
+  hash: propTypes.string
+};
+
 export default Footer;
