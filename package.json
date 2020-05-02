@@ -19,6 +19,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "lint": "eslint ./src",
+    "format": "prettier --write \"./src/**/*.{js,json}\"",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -36,6 +37,8 @@
   },
   "devDependencies": {
     "eslint": "^6.8.0",
-    "eslint-plugin-react": "^7.19.0"
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-react": "^7.19.0",
+    "prettier": "^2.0.5"
   }
 }
