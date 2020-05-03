@@ -2,8 +2,25 @@ provider "aws" {
   region = "us-west-1"
 }
 
+variable "mysite" {
+  description = "Name of the site to create infrastructure"
+  type = string
+  default = "www.desertbythesearentals.com"
+}
+
+# cloudfront viewer_certificate property MUST be in us-east-1
+# Reference: https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#viewer-certificate-arguments
+provider "aws" {
+  alias  = "region_east_1"
+  region = "us-east-1"
+}
+
+data "aws_route53_zone" "hosted_zone" {
+  name = "desertbythesearentals.com"
+}
+
 resource "aws_s3_bucket" "site" {
-  bucket = "www.desertbythesearentals.com"
+  bucket = var.mysite
   acl    = "public-read"
 
   website {
@@ -33,19 +50,10 @@ resource "aws_s3_bucket_policy" "site" {
 EOF
 }
 
-provider "aws" {
-  alias  = "region_east_1"
-  region = "us-east-1"
-}
-
 resource "aws_acm_certificate" "desertbythesearentals" {
-  provider = aws.region_east_1
+  provider = aws.region_east_1 # certificate must be in east-1
   domain_name       = aws_s3_bucket.site.bucket # same as bucket name
   validation_method = "DNS"
-}
-
-data "aws_route53_zone" "hosted_zone" {
-  name = "desertbythesearentals.com"
 }
 
 resource "aws_route53_record" "hosted_zone" {
