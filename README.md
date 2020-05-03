@@ -1,3 +1,7 @@
+![](https://github.com/Isez98/desert_by_the_sea/workflows/Integration/badge.svg)
+![](https://github.com/Isez98/desert_by_the_sea/workflows/Deployment/badge.svg?branch=master)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

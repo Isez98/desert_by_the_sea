@@ -1,30 +1,34 @@
-name: Aws S3 Deployment
+name: Deployment
 
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ] 
+    branches:
+      - master # deploy only when code is on master(production) branch
 
 jobs:
-  build-and-deploy:
-
+  lint-build:
     runs-on: ubuntu-18.04
-
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Setup Node v${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
 
-    - name: Installing dependencies
-      run: npm install
-      
-    - name: Building the application
+    - name: npm install
+      run: npm ci
+
+    - name: lint
+      run: npm run lint
+
+    - name: build
       run: npm run build
 
-    - name: S3 Deploy
+  deploy:
+    runs-on: ubuntu-18.04
+    needs: lint-build
+    steps:
+    - name: Deployment
       uses: ItsKarma/aws-cli@v1.70.0
       with:
         args: s3 sync --delete --acl public-read build/ s3://www.desertbythesearentals.com/
