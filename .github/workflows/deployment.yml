@@ -28,6 +28,7 @@ jobs:
     runs-on: ubuntu-18.04
     needs: lint-build
     steps:
+    - uses: actions/checkout@v2
     - name: Deployment
       uses: ItsKarma/aws-cli@v1.70.0
       with:
