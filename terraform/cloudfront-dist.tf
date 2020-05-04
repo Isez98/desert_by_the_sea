@@ -1,12 +1,8 @@
-locals {
-  s3_origin_id = "S3-${aws_s3_bucket.web_bucket.id}"
-}
-
-resource "aws_cloudfront_distribution" "website" {
+resource "aws_cloudfront_distribution" "desertbythesearentals" {
   enabled = true
   origin {
-    domain_name = aws_s3_bucket.web_bucket.bucket_domain_name
-    origin_id   = local.s3_origin_id
+    domain_name = aws_s3_bucket.site.bucket_domain_name
+    origin_id   = "from_s3_${aws_s3_bucket.site.bucket_domain_name}"
   }
 
   default_root_object = "index.html"
@@ -16,7 +12,7 @@ resource "aws_cloudfront_distribution" "website" {
   default_cache_behavior {
     allowed_methods  = ["GET", "HEAD"]
     cached_methods   = ["GET", "HEAD"]
-    target_origin_id = local.s3_origin_id
+    target_origin_id   = "from_s3_${aws_s3_bucket.site.bucket_domain_name}"
 
     forwarded_values {
       query_string = false
@@ -39,11 +35,11 @@ resource "aws_cloudfront_distribution" "website" {
   }
 
   aliases = [
-    var.website_domain
+    aws_s3_bucket.site.bucket
   ]
 
   viewer_certificate {
-    acm_certificate_arn = aws_acm_certificate_validation.cert.certificate_arn
+    acm_certificate_arn = aws_acm_certificate_validation.desertbythesearentals.certificate_arn
     minimum_protocol_version = "TLSv1.1_2016"
     ssl_support_method       = "sni-only"
   }
@@ -61,6 +57,4 @@ resource "aws_cloudfront_distribution" "website" {
     response_code         = "200"
     response_page_path    = "/index.html"
   }
-  
-
 }
