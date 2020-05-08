@@ -1,0 +1,35 @@
+
+
+@font-face { font-family: Montserrat; src: url('../../Resources/Montserrat-Regular.ttf'); } 
+
+.Main {
+    background-color: #fff;
+    position: relative;
+    top: -1.5rem !important;
+    
+}
+
+.text {
+    font-family: Montserrat;
+}
+
+.greeting {
+    color: #013ee5;
+    font-size: 34px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.paragraph {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.center {
+    text-align: center !important;
+}
+
+.gallery {
+    padding: 40px;
+    padding-bottom: 35rem;
+}
