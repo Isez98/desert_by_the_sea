@@ -1,4 +1,4 @@
-import AWS from 'aws-sdk';
+/* import AWS from 'aws-sdk';
 // **DO THIS**:
 //   Replace BUCKET_NAME with the bucket name.
 //
@@ -81,4 +81,4 @@ function viewAlbum(albumName) {
     document.getElementById('viewer').innerHTML = getHtml(htmlTemplate);
     document.getElementsByTagName('img')[0].setAttribute('style', 'display:none;');
   });
-}
+} */
