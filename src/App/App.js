@@ -17,6 +17,7 @@ console.log(pageLang);
 window.location.hash = `lang=${pageLang}`;
 
 function App() {
+    console.log("This is an test for v0.1.4");
   return (
     <Router>
       <div className="App">

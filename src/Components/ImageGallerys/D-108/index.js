@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import Gallery from 'react-grid-gallery';
-import '../../../App/App.css';
+import '../../../Paginas/Condos/style.css';
 
 class D108 extends React.Component {
   constructor() {
@@ -23,6 +23,7 @@ class D108 extends React.Component {
     );
   }
 }
+
 //Estudiar  promises and callbacks
 function fetchImages() {
   return axios
@@ -33,8 +34,8 @@ function fetchImages() {
         id: product.id,
         src: product.largeImageURL,
         thumbnail: product.previewURL,
-        thumbnailWidth: 370,
-        thumbnailHeight: 244,
+        thumbnailWidth: 1600,
+        thumbnailHeight: 800,
         caption: '2 room condominium.'
       }));
     })

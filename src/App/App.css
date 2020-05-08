@@ -11,20 +11,20 @@
 
 @media only screen and (min-width: 1451px){
     .hero {
-        background-image: url('../Resources/Condo_Photos/pdp_1200x675.jpg');
-        min-height: 900px;
+        background-image: url('../Resources/Condo_Photos/pdp_1600x750.jpg');
+        min-height: 700px;
         min-width: 100%;
     }
     
     .hero::before {
-        background-image: url('../Resources/Condo_Photos/pdp_1200x675.jpg');
+        background-image: url('../Resources/Condo_Photos/pdp_1600x750.jpg');
         width: 100%;
-        min-height: 900px;
+        min-height: 700px;
     }
     
     .hero::after {
         width: 100%;
-        min-height: 900px;
+        min-height: 700px;
         background-color: #d59241;
     }
 
@@ -71,35 +71,35 @@
     }
 
     .hero {
-        background-image: url('../Resources/Condo_Photos/pdp_1200x900.jpg');
-        min-height: 900px;
+        background-image: url('../Resources/Condo_Photos/pdp_1400x700.jpg');
+        min-height: 700px;
         min-width: 100%;
     }
     
     .hero::before {
         width: 100%;
-        min-height: 900px;
+        min-height: 700px;
     }
     
     .hero::after {
         width: 100%;
-        min-height: 900px;
+        min-height: 700px;
         background-color: #d59241;
     }
 
     h2 {
-        font-size: 2.25rem !important;
+        font-size: 2.0rem !important;
     }
     .right-text {
         font-size: 1.7rem !important;
     }
 
     .princesa-list {
-        font-size: 1rem !important;
+        font-size: .95rem !important;
     }
 
     .section-two-list {
-        font-size: 1.35rem !important;
+        font-size: 1.15rem !important;
     }
 
     .sectionImageRight {
@@ -125,19 +125,19 @@
         font-size: 1.5rem !important;
     }
     .hero {
-        background-image: url('../Resources/Condo_Photos/pdp_1100x900.jpg');
-        min-height: 900px;
+        background-image: url('../Resources/Condo_Photos/pdp_1100x700.jpg');
+        min-height: 700px;
         min-width: 100%;
     }
     
     .hero::before {
         width: 100%;
-        min-height: 900px;
+        min-height: 700px;
     }
     
     .hero::after {
         width: 100%;
-        min-height: 900px;
+        min-height: 700px;
         background-color: #d59241;
     }
 
@@ -191,7 +191,7 @@
     }
 }
 
-/*  Most phones (horizontal) */
+/*  Most phones (horizontal and tablets) */
 @media only screen and (max-width: 770px) {
     .announcement {
         line-height: 1rem;
@@ -199,15 +199,15 @@
     }
     .hero {
         background-image: url('../Resources/Condo_Photos/pdp_MobileVertical.jpg');
-        min-height: 600px;
+        min-height: 900px;
     }
 
     .hero::before {
-        min-height: 600px;
+        min-height: 900px;
     }
 
     .hero::after {
-        min-height: 600px;
+        min-height: 900px;
         width: 100%;
         background-color: #d59241;
     }
@@ -436,7 +436,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 2vh;
+    height: 4rem;
     background-color: rgb( 97,173,206);    
 }
 
@@ -505,10 +505,6 @@
     color: #013ee5;
 }
 
-.travelBarText:hover {
-    
-}
-
 .text {
     font-family: Montserrat;
 }
@@ -516,17 +512,10 @@
 .logo {
     max-width: 8%;
     max-height: 8%;
-    min-width: 170px;
+    min-width: 100px;
     min-height: 50px;
     left: 10;
     cursor: pointer;
-}
-
-.Main {
-    background-color: #d59241;
-    position: relative;
-    top: -1.5rem !important;
-    
 }
 
 .mainText {
@@ -548,7 +537,6 @@
 }
 
 .paragraph {
-    color: #fff; 
     font-size: 20px;
     text-align: justify;
 }
@@ -571,11 +559,6 @@ h2 {
     font-size: 2.5rem;
     font-weight: normal;
     margin: 1rem;
-}
-
-.gallery {
-    padding: 40px;
-    padding-bottom: 30rem;
 }
 
 .slide-container {

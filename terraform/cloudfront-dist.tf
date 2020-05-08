@@ -48,13 +48,13 @@ resource "aws_cloudfront_distribution" "desertbythesearentals" {
     error_code            = "404"
     error_caching_min_ttl = "86400"
     response_code         = "200"
-    response_page_path    = "/index.html"
+    response_page_path    = "/error.html"
   }
 
   custom_error_response {
     error_code            = "403"
     error_caching_min_ttl = "86400"
     response_code         = "200"
-    response_page_path    = "/index.html"
+    response_page_path    = "/error.html"
   }
 }

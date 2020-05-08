@@ -2,11 +2,11 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import propTypes from 'prop-types';
 
-const HeaderLogo = (path) => {
+const HeaderLogo = (props) => {
   const history = useHistory();
 
   function handleClick() {
-    history.push(path);
+    history.push(props.path);
   }
   return (
     <img
@@ -19,6 +19,7 @@ const HeaderLogo = (path) => {
 };
 
 HeaderLogo.propTypes = {
+  props: propTypes.object,  
   path: propTypes.string
 };
 
