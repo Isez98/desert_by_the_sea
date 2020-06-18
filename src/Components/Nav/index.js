@@ -9,12 +9,12 @@ function Nav(props) {
   const pageLang = props.hash;
   return (
     <nav className="nav">
-      <HeaderLogo path={`/#lang=${pageLang}`} />
-       {
-        //  <ul className="nav-links">
-        //   <MenuItem text={TextContent[pageLang].home} path={`/#lang=${pageLang}`} />
-        //   <MenuItem text={TextContent[pageLang].condos} path={`/condos#lang=${pageLang}`} />
-        // </ul>
+      <HeaderLogo path={`/#lang=${pageLang}`} />       
+        {
+       /* <ul className="nav-links">
+          <MenuItem text={TextContent[pageLang].home} path={`/#lang=${pageLang}`} />
+          <MenuItem text={TextContent[pageLang].condos} path={`/condos#lang=${pageLang}`} />
+        </ul>*/
        }
     </nav>
   );

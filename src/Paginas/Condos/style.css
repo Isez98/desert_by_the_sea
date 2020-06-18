@@ -18,6 +18,8 @@
     font-size: 34px;
     text-align: center;
     font-weight: 800;
+    margin-top: 3rem !important;
+    margin-bottom: .5rem !important;
 }
 
 .paragraph {
@@ -32,4 +34,11 @@
 .gallery {
     padding: 40px;
     padding-bottom: 35rem;
+}
+
+.gallery-photo {
+  width: 18rem;
+  height: 18rem;
+  margin: 2rem;
+  margin-Top: 1rem;
 }
