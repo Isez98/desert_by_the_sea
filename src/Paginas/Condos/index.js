@@ -1,15 +1,16 @@
 import React from 'react';
-import ImageGallerys from '../../Components/ImageGallerys';
 import './style.css';
+import GalleryTemplate from '../../Components/ImageGallerys/Gallery';
 
-function Condos() {
-  return (
-    <div className="Main">
-      <h1 className="text greeting">Condos</h1>
-      <h3 className="text paragraph center">Dos Habitaciones, Dos Baños</h3>
-      <ImageGallerys></ImageGallerys>
-    </div>
-  );
+ class Condos extends React.Component {
+  render() {
+    return (
+      <div className="Main">
+        <h1 className="text greeting">Condos </h1>
+        <GalleryTemplate></GalleryTemplate>
+      </div>
+    );
+  }
 }
 
 export default Condos;
