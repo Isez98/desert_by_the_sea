@@ -1,8 +1,8 @@
 import React from 'react';
 import '../../App/App.css';
-import MenuItem from '../MenuItem';
+//import MenuItem from '../MenuItem';
 import HeaderLogo from '../HeaderLogo';
-import TextContent from '../../App/textContent';
+//import TextContent from '../../App/textContent';
 import propTypes from 'prop-types';
 
 function Nav(props) {

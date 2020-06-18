@@ -1,5 +1,4 @@
 import AWS from 'aws-sdk';
-import React from 'react';
 // **DO THIS**:
 //   Replace BUCKET_NAME with the bucket name.
 //
@@ -22,27 +21,8 @@ let s3 = new AWS.S3({
 });
 
 // A utility function to create HTML.
-function getHtml(template) {
- return template.join('\n');
-}
-
 
 // List the photo albums that exist in the bucket.
-function listAlbums() {
-  s3.listObjects({Delimiter: '/'}, function(err, data) {
-    if (err) {
-      return alert('There was an error listing your albums: ' + err.message);
-    } else {
-      let albums = data.CommonPrefixes.map(function(commonPrefix) {
-        let prefix = commonPrefix.Prefix;
-        let albumName = decodeURIComponent(prefix.replace('/', ''));
-        return(
-          console.log(albums)
-        )
-      });      
-    }
-  });
-}
 
 // Show the photos that exist in an album.
 function viewAlbum(albumName) {
