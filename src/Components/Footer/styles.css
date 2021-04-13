@@ -1,0 +1,36 @@
+.footer{
+    padding-bottom: 1.5vmin;
+    padding-top: 1vmin;
+    background-color: rgb( 97,173,206);
+    font-size: 1.2rem;
+    text-align: left;
+    font-size: 1vw;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .25rem;
+}
+
+.footer-phone {
+    width: 65%;
+    margin-left: 1.5rem;
+}
+
+.footer-company {
+    display: block;
+    text-align: center;
+}
+
+.footer-social {
+    display: flex;
+    margin-right: 1.5rem;
+}
+
+.facebook-logo {
+    cursor: pointer;
+    height: 1.15vw;
+    align-self: center;
+    margin-left: 10px;
+}

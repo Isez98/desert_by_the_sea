@@ -8,13 +8,13 @@
     "@testing-library/user-event": "^7.2.1",
     "@tryghost/content-api": "^1.4.1",
     "aws-sdk": "^2.674.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "jquery": "^3.5.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-grid-gallery": "^0.5.5",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1",
+    "react-scripts": "^4.0.3",
     "react-simple-image-slider": "^1.0.3",
     "react-slideshow": "0.0.1"
   },
@@ -39,7 +39,6 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-react": "^7.19.0",
     "prettier": "^2.0.5",

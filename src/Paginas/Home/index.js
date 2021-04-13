@@ -2,6 +2,9 @@ import React from 'react';
 import '../../App/App.css';
 import textContent from './textContent';
 import propTypes from 'prop-types';
+import image1 from '../../Resources/Condo_Photos/d-108/1.jpeg';
+import image2 from '../../Resources/Condo_Photos/d-108/3.jpeg';
+import princesaLogo from '../../Resources/Condo_Photos/pdp_logo.png';
 
 function Home(props) {
   //console.log(props);
@@ -17,7 +20,7 @@ function Home(props) {
       <section className="development-section">
         <div>
           <div className="devLogoContainer">
-            <img className="condoLogos" src={require('../../Resources/Condo_Photos/pdp_logo.png')} alt=""></img>
+            <img className="condoLogos" src={princesaLogo} alt=""></img>
           </div>
           <h2 className="subTitle">{textContent[lang].developments}</h2>
         </div>
@@ -46,15 +49,15 @@ function Home(props) {
               </ul>
             </div>
           </div>
-          <div className="imageContainer">
-            <img className="sectionImageRight" src={require('../../Resources/Condo_Photos/d-108/1.jpeg')} alt=""></img>
+          <div className="imageContainer__end">
+            <img className="sectionImageRight" src={image1} alt=""></img>
           </div>
         </div>
       </section>
       <section className="section">
         <div className="section-container last-container">
           <div className="imageContainer">
-            <img className="sectionImageLeft" src={require('../../Resources/Condo_Photos/d-108/3.jpeg')} alt=""></img>
+            <img className="sectionImageLeft" src={image2} alt=""></img>
           </div>
           <div className="right-text">
             <h2>{textContent[lang].headingWhy}</h2>

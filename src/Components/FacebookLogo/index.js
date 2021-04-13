@@ -1,4 +1,5 @@
 import React from 'react';
+import fbLogo from '../../Resources/facebook.png';
 
 const FacebookLogo = () => {
   function handleClick() {
@@ -6,7 +7,7 @@ const FacebookLogo = () => {
   }
 
   return (
-    <img className="facebook-logo" src={require('../../Resources/facebook.png')} alt="" onClick={handleClick}></img>
+    <img className="facebook-logo" src={fbLogo} alt="" onClick={handleClick}></img>
   );
 };
 
