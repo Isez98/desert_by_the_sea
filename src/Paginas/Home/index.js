@@ -2,8 +2,8 @@ import React from 'react';
 import '../../App/App.css';
 import textContent from './textContent';
 import propTypes from 'prop-types';
-import image1 from '../../Resources/Condo_Photos/d-108/1.jpeg';
-import image2 from '../../Resources/Condo_Photos/d-108/3.jpeg';
+import image1 from '../../Resources/Condo_Photos/pic-right.jpeg';
+import image2 from '../../Resources/Condo_Photos/pic-left.jpeg';
 import princesaLogo from '../../Resources/Condo_Photos/pdp_logo.png';
 
 function Home(props) {
@@ -26,7 +26,7 @@ function Home(props) {
         </div>
       </section>
       <section className="section">
-        <div className="section-container">
+        <div className="section-container first-container">
           <div className="left-text">
             <h2>{textContent[lang].headingMan}</h2>
             <p className="section-two-list justify">{textContent[lang].paragraphMan}</p>

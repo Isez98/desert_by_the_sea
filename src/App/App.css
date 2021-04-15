@@ -19,12 +19,196 @@
         background-image: url("../Resources/Condo_Photos/pdp_Mobile.jpg");
         background-position: center center;
     }
+
+    .last-container {
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .section{
+        margin-top: 5vh;
+    }
+
+    .first-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .imageContainer__end{
+        justify-content: center;
+    }
+
+    .sectionImageRight{
+        margin: 0em;
+        max-width: 75%;
+    }
+
+    .imageContainer{
+        display: flex;
+        justify-content: center;
+    }
+
+    .sectionImageLeft {
+        margin-right: 0em;
+    }
+
+    .left-text{
+        align-self: center;
+        width: 90%;
+    }
+
+    .right-text{
+        text-align: center;
+        margin-top: 3vh;
+        margin-bottom: 5vh;
+    }
+
+    .travelbar{
+        font-size: 2vw;
+    }
+
+    .greeting{
+        font-size: 6vw;
+    }
+
+    .paragraph{
+        font-size: 3vw;
+    }
+
+    h1 {
+        font-size: 3.5vw;
+    }
+
+    h2 {
+        font-size: 5vw;
+        font-weight: normal;
+        margin: 1rem;
+    }
+
+    .hero-title{
+        font-size: 7vw;
+    }
+
+    .hero-sub-title{
+        font-size: 4.25vw;
+    }
+
+    .subTitle {
+        font-size: 4vw;
+    }
+
+    .section-two-list{
+        font-size: 3.5vw;
+    }
+
+    .princesa-list{
+        justify-content: center;
+        font-size: 2.5vw;
+    }
+
+    .section-two-list > li {
+        margin-top: 1.75vh;
+    }
 }
 
-@media screen and (max-width:900px){
+@media only screen and (min-width: 701px) and (max-width:900px){
     .hero{
         background-image: url("../Resources/Condo_Photos/pdp_Ipad.jpg");
         background-position: center center;
+    }
+
+    .last-container {
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .first-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .section{
+        margin-top: 5vh;
+    }
+
+    .imageContainer__end{
+        justify-content: center;
+    }
+
+    .sectionImageRight{
+        margin: 0em;
+        max-width: 75%;
+    }
+
+    .imageContainer{
+        display: flex;
+        justify-content: center;
+    }
+
+    .sectionImageLeft {
+        margin-right: 0em;
+    }
+
+    .left-text{
+        align-self: center;
+        width: 90%;
+    }
+
+    .right-text{
+        text-align: center;
+        margin-top: 3vh;
+        margin-bottom: 5vh;
+    }
+
+    .travelbar{
+        font-size: 2vw;
+    }
+
+    .greeting{
+        font-size: 6vw;
+    }
+
+    .paragraph{
+        font-size: 3vw;
+    }
+
+    h1 {
+        font-size: 3.5vw;
+    }
+
+    h2 {
+        font-size: 3.5vw;
+        font-weight: normal;
+        margin: 1rem;
+    }
+
+    .hero-title{
+        font-size: 5.5vw;
+    }
+
+    .hero-sub-title{
+        font-size: 3.5vw;
+    }
+
+    .subTitle {
+        font-size: 3.25vw;
+    }
+
+    .section-two-list{
+        font-size: 2.5vw;
+    }
+
+    .princesa-list{
+        justify-content: center;
+        font-size: 2vw;
+    }
+
+    .section-two-list > li {
+        margin-top: 1.75vh;
     }
 }
 
@@ -32,6 +216,97 @@
     .hero{
         background-image: url("../Resources/Condo_Photos/pdp_1600x750.jpg");
         background-position: center center;
+    }
+
+    .section{
+        margin-top: 15vh;
+    }
+
+    .imageContainer__end{
+        justify-content: flex-end;
+    }
+
+    .sectionImageRight{
+        margin-left: 5em;
+        max-width: 75%;
+    }
+
+    .sectionImageLeft{
+        margin-right: 5em;
+    }
+
+    .first-container{
+        justify-content: space-between;
+    }
+
+    .last-container{
+        justify-content: space-between;
+    }
+
+    .left-text{
+        text-align: justify;
+    }
+
+    .first-list {
+        width: 15rem;
+    }
+
+    .right-text{
+        text-align: justify;
+    }
+
+    .travelbar{
+        font-size: 2vw;
+    }
+
+    .greeting{
+        font-size: 6vw;
+    }
+
+    .paragraph{
+        font-size: 3vw;
+    }
+
+    h1 {
+        font-size: 3.5vw;
+    }
+
+    h2 {
+        font-size: 2vw;
+        font-weight: normal;
+        margin: 1rem;
+    }
+
+    .hero-title{
+        font-size: 3.5vw;
+    }
+
+    .hero-sub-title{
+        font-size: 3vw;
+    }
+
+    .subTitle {
+        font-size: 2.5vw;
+    }
+
+    .section-two-list{
+        font-size: 1.5vw;
+    }
+
+    .princesa-list{
+        font-size: 1.15vw;
+    }
+
+    .princesa-list > ul > li {
+        margin-bottom: 1.25vh;
+    }
+
+    .list-align{
+        font-size: 1.35vw;
+    }
+
+    .list-align > li {
+        margin-top: 2.75vh;
     }
 }
 
@@ -75,7 +350,6 @@
 
 .travelbar {
     size: 5rem;
-    font-size: 2vw;
     color : white;
     display: block;
     width: 35%;
@@ -117,13 +391,11 @@
 
 .greeting {
     color: #013ee5;
-    font-size: 6vw;
     text-align: center;
     font-weight: 800;
 }
 
 .paragraph {
-    font-size: 3vw;
     text-align: justify;
 }
 
@@ -135,16 +407,6 @@
     margin-left: auto;
     margin-right: auto;    
     width: 80%;    
-}
-
-h1 {
-    font-size: 3.5vw;
-}
-
-h2 {
-    font-size: 2vw;
-    font-weight: normal;
-    margin: 1rem;
 }
 
 .slide-container {
@@ -202,7 +464,7 @@ h2 {
 
 .hero-message {
     color: #fff;
-    text-shadow: #343a40 4px 4px;
+    text-shadow: #343a40 3px 3px;
     min-width: 100%;
     min-height: 20em;
     position: relative;
@@ -220,7 +482,6 @@ h2 {
 
 .hero-title {
     width: 100%;
-    font-size: 3.5vw;
     display: block;
     text-align: center;
     margin-right: 0 !important;
@@ -229,7 +490,6 @@ h2 {
 
 .hero-sub-title {
     width: 100%;
-    font-size: 3vw;
     display: block;
     text-align: center;
     margin-right: 0 !important;
@@ -242,7 +502,6 @@ h2 {
 }
 
 .section {
-    margin-top: 10vmin;
     width: 100%;
     display: flex;
     color: black;
@@ -252,24 +511,14 @@ h2 {
     display: inline-table;
 }
 
-.subTitle {
-    font-size: 2.5vw;
-}
-
 .section-two-list {
     max-width: 70rem;
     text-align: justify;
-    font-size: 1.3vw;
     margin: 0;
-}
-
-.section-two-list > li {
-    margin-top: 1.75vh;
 }
 
 .section-container {
     width: 90%;
-    justify-content: space-between;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -279,7 +528,6 @@ h2 {
 
 .left-text {
     align-content: center;
-    text-align: justify;
     padding-left: initial;
     min-width: 50%; 
     /* padding-left: 10rem; */
@@ -288,15 +536,6 @@ h2 {
 .princesa-list {
     text-align: left !important;
     display: flex;
-    font-size: 1vw;
-}
-
-.princesa-list > ul > li {
-    margin-top: .75vh;
-}
-
-.first-list {
-    width: 15rem;
 }
 
 .second-list {
@@ -319,21 +558,19 @@ h2 {
     width: 100%;
     display: flex;
     align-self: stretch;
-    justify-content: flex-end;
     position: relative;
 }
 
 .sectionImageRight {
     display: flex;
-    margin-left: 5em;
-    max-width: 75%;
+    
     align-self: flex-start;
     padding-top: 2rem;
 }
 
 .right-text {
     justify-content: flex-start;
-    text-align: justify;
+    
     float: right;
     padding-right: initial;
     min-width: 50%;
@@ -341,7 +578,6 @@ h2 {
 
 .sectionImageLeft {
     display: flex;
-    margin-right: 5em;
     align-items: flex-start;
     max-width: 75%;
 }
