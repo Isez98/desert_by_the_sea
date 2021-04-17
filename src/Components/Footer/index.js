@@ -3,6 +3,7 @@ import '../../App/App.css';
 import textContent from './textContent';
 import FacebookLogo from '../FacebookLogo';
 import propTypes from 'prop-types';
+import './styles.css';
 
 const Footer = (props) => {
   const pageLang = props.hash;
