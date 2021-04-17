@@ -8,6 +8,11 @@ AWS_ACCESS_KEY_ID=test
 AWS_SECRET_ACCESS_KEY=test
 ```
 
+Load environment variables with:
+```
+>$ source .secrets/.env
+```
+
 To execute on root folder.
 ```
 ./cli-tools.sh
