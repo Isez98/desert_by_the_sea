@@ -11,7 +11,7 @@ function run_image()
 {
   # Mount terraform code
   # Mount your kubectl configurations
-  # Load your secrets
+  # Load your secrets 
   if [[ -f .secrets/env.list ]]; then
       docker run -it --rm \
       -v "$(pwd)":/terraform \
