@@ -25,7 +25,8 @@ let en = {
     jacuzzi: '1 jacuzzi',
     court: 'Volleyball court in the sand',
     palapas: 'Palapas and lounge chairs at the beach'
-  }
+  },
+  housesText: 'Excellent houses at Cholla Bay'
 };
 let es = {
   title: 'Desert By The Sea Rentals',
@@ -54,7 +55,8 @@ let es = {
     jacuzzi: '1 jacuzzi',
     court: 'Cancha de vóleibol en la arena',
     palapas: 'Palapas y camastros en la playa'
-  }
+  },
+  housesText: 'Casas excelentes en la Bahía de la Cholla'
 };
 export default {
   default: en,

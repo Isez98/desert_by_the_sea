@@ -5,9 +5,13 @@ import propTypes from 'prop-types';
 import image1 from '../../Resources/Condo_Photos/pic-right.jpeg';
 import image2 from '../../Resources/Condo_Photos/pic-left.jpeg';
 import princesaLogo from '../../Resources/Condo_Photos/pdp_logo.png';
-
+import house_1 from '../../Resources/dbtsr_pics/1.jpeg';
+import house_2 from '../../Resources/dbtsr_pics/2.jpeg';
+import house_3 from '../../Resources/dbtsr_pics/3.jpeg';
+import house_4 from '../../Resources/dbtsr_pics/4.jpeg';
+import house_5 from '../../Resources/dbtsr_pics/5.jpeg';
+import house_6 from '../../Resources/dbtsr_pics/6.jpeg';
 function Home(props) {
-  //console.log(props);
   let lang = props.hash;
   return (
     <div>
@@ -68,6 +72,25 @@ function Home(props) {
               <li>{textContent[lang].listWhy.location}</li>
             </ul>
           </div>
+        </div>
+      </section>
+      <section className="development-section">
+        <div>
+          <h2 className="subTitle">{textContent[lang].housesText}</h2>
+        </div>
+      </section>
+      <section className="">
+        <div className="houseImagesRow">
+          <img className="smallImage" src={house_1} alt="" />
+          <img className="smallImage" src={house_2} alt="" />
+        </div>
+        <div className="houseImagesRow">
+          <img className="smallImage" src={house_3} alt="" />
+          <img className="smallImage" src={house_4} alt="" />
+        </div>
+        <div className="houseImagesRow">
+          <img className="smallImage" src={house_5} alt="" />
+          <img className="smallImage" src={house_6} alt="" />
         </div>
       </section>
     </div>
