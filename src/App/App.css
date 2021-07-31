@@ -1,7 +1,10 @@
-@font-face { font-family: Montserrat; src: url('../Resources/Montserrat-Regular.ttf'); } 
+@font-face {
+  font-family: Montserrat;
+  src: url('../Resources/Montserrat-Regular.ttf');
+}
 
 .document {
-    background-color: #d59241;
+  background-color: #d59241;
 }
 
 .App {
@@ -14,321 +17,365 @@
   pointer-events: none;
 }
 
-@media screen and (max-width: 700px){
-    .hero{
-        background-image: url("../Resources/Condo_Photos/pdp_Mobile.jpg");
-        background-position: center center;
-    }
+@media screen and (max-width: 700px) {
+  .hero {
+    background-image: url('../Resources/Condo_Photos/pdp_Mobile.jpg');
+    background-position: center center;
+  }
 
-    .last-container {
-        margin-bottom: 3rem;
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
+  .last-container {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 
-    .section{
-        margin-top: 5vh;
-    }
+  .section {
+    margin-top: 5vh;
+  }
 
-    .first-container {
-        flex-direction: column;
-        justify-content: center;
-    }
+  .first-container {
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    .imageContainer__end{
-        justify-content: center;
-    }
+  .imageContainer__end {
+    justify-content: center;
+  }
 
-    .sectionImageRight{
-        margin: 0em;
-        max-width: 75%;
-    }
+  .sectionImageRight {
+    margin: 0em;
+    max-width: 75%;
+  }
 
-    .imageContainer{
-        display: flex;
-        justify-content: center;
-    }
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+  }
 
-    .sectionImageLeft {
-        margin-right: 0em;
-    }
+  .sectionImageLeft {
+    margin-right: 0em;
+  }
 
-    .left-text{
-        align-self: center;
-        width: 90%;
-    }
+  .left-text {
+    align-self: center;
+    width: 90%;
+  }
 
-    .right-text{
-        text-align: center;
-        margin-top: 3vh;
-        margin-bottom: 5vh;
-    }
+  .right-text {
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+  }
 
-    .travelbar{
-        font-size: 2vw;
-    }
+  .travelbar {
+    font-size: 2vw;
+  }
 
-    .greeting{
-        font-size: 6vw;
-    }
+  .greeting {
+    font-size: 6vw;
+  }
 
-    .paragraph{
-        font-size: 3vw;
-    }
+  .paragraph {
+    font-size: 3vw;
+  }
 
-    h1 {
-        font-size: 3.5vw;
-    }
+  h1 {
+    font-size: 3.5vw;
+  }
 
-    h2 {
-        font-size: 5vw;
-        font-weight: normal;
-        margin: 1rem;
-    }
+  h2 {
+    font-size: 5vw;
+    font-weight: normal;
+    margin: 1rem;
+  }
 
-    .hero-title{
-        font-size: 7vw;
-    }
+  .hero-title {
+    font-size: 7vw;
+  }
 
-    .hero-sub-title{
-        font-size: 4.25vw;
-    }
+  .hero-sub-title {
+    font-size: 4.25vw;
+  }
 
-    .subTitle {
-        font-size: 4vw;
-    }
+  .subTitle {
+    font-size: 4vw;
+  }
 
-    .section-two-list{
-        font-size: 3.5vw;
-    }
+  .section-two-list {
+    font-size: 3.5vw;
+  }
 
-    .princesa-list{
-        justify-content: center;
-        font-size: 2.5vw;
-    }
+  .princesa-list {
+    justify-content: center;
+    font-size: 2.5vw;
+  }
 
-    .section-two-list > li {
-        margin-top: 1.75vh;
-    }
+  .section-two-list > li {
+    margin-top: 1.75vh;
+  }
+
+  .houseImagesRow {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 0 0;
+  }
+
+  .smallImage {
+    width: 67vw;
+    height: 62vw;
+    object-fit: cover;
+    margin: 0 0 2.5vw 0;
+  }
 }
 
-@media only screen and (min-width: 701px) and (max-width:900px){
-    .hero{
-        background-image: url("../Resources/Condo_Photos/pdp_Ipad.jpg");
-        background-position: center center;
-    }
+@media only screen and (min-width: 701px) and (max-width: 900px) {
+  .hero {
+    background-image: url('../Resources/Condo_Photos/pdp_Ipad.jpg');
+    background-position: center center;
+  }
 
-    .last-container {
-        margin-bottom: 3rem;
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
+  .last-container {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 
-    .first-container {
-        flex-direction: column;
-        justify-content: center;
-    }
+  .first-container {
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    .section{
-        margin-top: 5vh;
-    }
+  .section {
+    margin-top: 5vh;
+  }
 
-    .imageContainer__end{
-        justify-content: center;
-    }
+  .imageContainer__end {
+    justify-content: center;
+  }
 
-    .sectionImageRight{
-        margin: 0em;
-        max-width: 75%;
-    }
+  .sectionImageRight {
+    margin: 0em;
+    max-width: 75%;
+  }
 
-    .imageContainer{
-        display: flex;
-        justify-content: center;
-    }
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+  }
 
-    .sectionImageLeft {
-        margin-right: 0em;
-    }
+  .sectionImageLeft {
+    margin-right: 0em;
+  }
 
-    .left-text{
-        align-self: center;
-        width: 90%;
-    }
+  .left-text {
+    align-self: center;
+    width: 90%;
+  }
 
-    .right-text{
-        text-align: center;
-        margin-top: 3vh;
-        margin-bottom: 5vh;
-    }
+  .right-text {
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+  }
 
-    .travelbar{
-        font-size: 2vw;
-    }
+  .travelbar {
+    font-size: 2vw;
+  }
 
-    .greeting{
-        font-size: 6vw;
-    }
+  .greeting {
+    font-size: 6vw;
+  }
 
-    .paragraph{
-        font-size: 3vw;
-    }
+  .paragraph {
+    font-size: 3vw;
+  }
 
-    h1 {
-        font-size: 3.5vw;
-    }
+  h1 {
+    font-size: 3.5vw;
+  }
 
-    h2 {
-        font-size: 3.5vw;
-        font-weight: normal;
-        margin: 1rem;
-    }
+  h2 {
+    font-size: 3.5vw;
+    font-weight: normal;
+    margin: 1rem;
+  }
 
-    .hero-title{
-        font-size: 5.5vw;
-    }
+  .hero-title {
+    font-size: 5.5vw;
+  }
 
-    .hero-sub-title{
-        font-size: 3.5vw;
-    }
+  .hero-sub-title {
+    font-size: 3.5vw;
+  }
 
-    .subTitle {
-        font-size: 3.25vw;
-    }
+  .subTitle {
+    font-size: 3.25vw;
+  }
 
-    .section-two-list{
-        font-size: 2.5vw;
-    }
+  .section-two-list {
+    font-size: 2.5vw;
+  }
 
-    .princesa-list{
-        justify-content: center;
-        font-size: 2vw;
-    }
+  .princesa-list {
+    justify-content: center;
+    font-size: 2vw;
+  }
 
-    .section-two-list > li {
-        margin-top: 1.75vh;
-    }
+  .section-two-list > li {
+    margin-top: 1.75vh;
+  }
+
+  .houseImagesRow {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+
+  .smallImage {
+    width: 40vw;
+    height: 36vw;
+    object-fit: cover;
+    margin: 0 0 2.5vw 0;
+  }
 }
 
-@media screen and (min-width:901px){
-    .hero{
-        background-image: url("../Resources/Condo_Photos/pdp_1600x750.jpg");
-        background-position: center center;
-    }
+@media screen and (min-width: 901px) {
+  .hero {
+    background-image: url('../Resources/Condo_Photos/pdp_1600x750.jpg');
+    background-position: center center;
+  }
 
-    .section{
-        margin-top: 15vh;
-    }
+  .section {
+    margin-top: 15vh;
+  }
 
-    .imageContainer__end{
-        justify-content: flex-end;
-    }
+  .imageContainer__end {
+    justify-content: flex-end;
+  }
 
-    .sectionImageRight{
-        margin-left: 5em;
-        max-width: 75%;
-    }
+  .sectionImageRight {
+    margin-left: 5em;
+    max-width: 75%;
+  }
 
-    .sectionImageLeft{
-        margin-right: 5em;
-    }
+  .sectionImageLeft {
+    margin-right: 5em;
+  }
 
-    .first-container{
-        justify-content: space-between;
-    }
+  .first-container {
+    justify-content: space-between;
+  }
 
-    .last-container{
-        justify-content: space-between;
-    }
+  .last-container {
+    justify-content: space-between;
+  }
 
-    .left-text{
-        text-align: justify;
-    }
+  .left-text {
+    text-align: justify;
+  }
 
-    .first-list {
-        width: 15rem;
-    }
+  .first-list {
+    width: 15rem;
+  }
 
-    .right-text{
-        text-align: justify;
-    }
+  .right-text {
+    text-align: justify;
+  }
 
-    .travelbar{
-        font-size: 2vw;
-    }
+  .travelbar {
+    font-size: 2vw;
+  }
 
-    .greeting{
-        font-size: 6vw;
-    }
+  .greeting {
+    font-size: 6vw;
+  }
 
-    .paragraph{
-        font-size: 3vw;
-    }
+  .paragraph {
+    font-size: 3vw;
+  }
 
-    h1 {
-        font-size: 3.5vw;
-    }
+  h1 {
+    font-size: 3.5vw;
+  }
 
-    h2 {
-        font-size: 2vw;
-        font-weight: normal;
-        margin: 1rem;
-    }
+  h2 {
+    font-size: 2vw;
+    font-weight: normal;
+    margin: 1rem;
+  }
 
-    .hero-title{
-        font-size: 3.5vw;
-    }
+  .hero-title {
+    font-size: 3.5vw;
+  }
 
-    .hero-sub-title{
-        font-size: 3vw;
-    }
+  .hero-sub-title {
+    font-size: 3vw;
+  }
 
-    .subTitle {
-        font-size: 2.5vw;
-    }
+  .subTitle {
+    font-size: 2.5vw;
+  }
 
-    .section-two-list{
-        font-size: 1.5vw;
-    }
+  .section-two-list {
+    font-size: 1.5vw;
+  }
 
-    .princesa-list{
-        font-size: 1.15vw;
-    }
+  .princesa-list {
+    font-size: 1.15vw;
+  }
 
-    .princesa-list > ul > li {
-        margin-bottom: 1.25vh;
-    }
+  .princesa-list > ul > li {
+    margin-bottom: 1.25vh;
+  }
 
-    .list-align{
-        font-size: 1.35vw;
-    }
+  .list-align {
+    font-size: 1.35vw;
+  }
 
-    .list-align > li {
-        margin-top: 2.75vh;
-    }
+  .list-align > li {
+    margin-top: 2.75vh;
+  }
+
+  /* House Classes */
+
+  .houseImagesRow {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5vh 0 5vh 0;
+  }
+
+  .smallImage {
+    width: 33vw;
+    height: 29vw;
+    object-fit: cover;
+  }
 }
-
 
 .nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 4rem;
-    background-color: rgb( 97,173,206);    
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem;
+  background-color: rgb(97, 173, 206);
 }
 
 .nav-links {
-    width: 20%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
 }
 
 .img {
-    border-style: none;
+  border-style: none;
 }
 
 .App-link {
@@ -336,261 +383,260 @@
 }
 
 .containerBar {
-    position: relative;
-    top: 0;
-    z-index: 1;
-    background-color: rgb( 97,173,206);
-    margin-bottom: 0%;
+  position: relative;
+  top: 0;
+  z-index: 1;
+  background-color: rgb(97, 173, 206);
+  margin-bottom: 0%;
 }
 
 .menuList {
-    width: 100%;
-    margin-top: 1rem;
+  width: 100%;
+  margin-top: 1rem;
 }
 
 .travelbar {
-    size: 5rem;
-    color : white;
-    display: block;
-    width: 35%;
-    margin-top: 0;
-    line-height: 3rem;
-    text-align: center;   
-    float: left;
+  size: 5rem;
+  color: white;
+  display: block;
+  width: 35%;
+  margin-top: 0;
+  line-height: 3rem;
+  text-align: center;
+  float: left;
 }
 
 .travelbar:hover {
-    background-color: whitesmoke;
-    cursor: pointer;    
-    color: #013ee5;
+  background-color: whitesmoke;
+  cursor: pointer;
+  color: #013ee5;
 }
 
 .text {
-    font-family: Montserrat;
+  font-family: Montserrat;
 }
 
 .logo {
-    max-width: 100px;
-    max-height: 50px;
-    min-width: 1em;
-    min-height: 1em;
-    left: 10;
-    cursor: pointer;
+  max-width: 100px;
+  max-height: 50px;
+  min-width: 1em;
+  min-height: 1em;
+  left: 10;
+  cursor: pointer;
 }
 
 .mainText {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .mainPicture {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
 
 .greeting {
-    color: #013ee5;
-    text-align: center;
-    font-weight: 800;
+  color: #013ee5;
+  text-align: center;
+  font-weight: 800;
 }
 
 .paragraph {
-    text-align: justify;
+  text-align: justify;
 }
 
 .center {
-    text-align: center !important;
+  text-align: center !important;
 }
 
 .homeText {
-    margin-left: auto;
-    margin-right: auto;    
-    width: 80%;    
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 
 .slide-container {
-    display: block;
-    width: 75%;
-    align-self: center;
-    margin-top: 0px;
-    margin-left: auto;
-    margin-right: auto; 
+  display: block;
+  width: 75%;
+  align-self: center;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*Hero Section*/
 
 .hero {
-    position: relative;
-    opacity: 0.9;
-    top: -.75rem;
-    width: 100%;
-    min-height: 95vh;
-    background-repeat: no-repeat;
-    background-size: cover;    
+  position: relative;
+  opacity: 0.9;
+  top: -0.75rem;
+  width: 100%;
+  min-height: 95vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero::before {
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -2;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
 }
 
 .hero::after {
-    background-color: #d59241 !important;
-    width: 100%;
-    height: 100%;
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: -1;
-    opacity: .2;
+  background-color: #d59241 !important;
+  width: 100%;
+  height: 100%;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: 0.2;
 }
 
 .flex-center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 .hero-message {
-    color: #fff;
-    text-shadow: #343a40 3px 3px;
-    min-width: 100%;
-    min-height: 20em;
-    position: relative;
+  color: #fff;
+  text-shadow: #343a40 3px 3px;
+  min-width: 100%;
+  min-height: 20em;
+  position: relative;
 }
 
 .hero-message::before {
-    content: "";
-    display: block;
-    position: absolute;
-    margin-left: 0;
-    min-width: 100%;
-    min-height: 20em;
-    z-index: -1;
+  content: '';
+  display: block;
+  position: absolute;
+  margin-left: 0;
+  min-width: 100%;
+  min-height: 20em;
+  z-index: -1;
 }
 
 .hero-title {
-    width: 100%;
-    display: block;
-    text-align: center;
-    margin-right: 0 !important;
-    margin-left: 0 !important;
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
 }
 
 .hero-sub-title {
-    width: 100%;
-    display: block;
-    text-align: center;
-    margin-right: 0 !important;
-    margin-left: 0 !important;
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
 }
 
 .hero-title {
-    margin: 3% 0;
-    text-transform: uppercase;
+  margin: 3% 0;
+  text-transform: uppercase;
 }
 
 .section {
-    width: 100%;
-    display: flex;
-    color: black;
+  width: 100%;
+  display: flex;
+  color: black;
 }
 
 .development-section {
-    display: inline-table;
+  display: inline-table;
 }
 
 .section-two-list {
-    max-width: 70rem;
-    text-align: justify;
-    margin: 0;
+  max-width: 70rem;
+  text-align: justify;
+  margin: 0;
 }
 
 .section-container {
-    width: 90%;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0px;
-    padding-right: 20px;
+  width: 90%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0px;
+  padding-right: 20px;
 }
 
 .left-text {
-    align-content: center;
-    padding-left: initial;
-    min-width: 50%; 
-    /* padding-left: 10rem; */
+  align-content: center;
+  padding-left: initial;
+  min-width: 50%;
+  /* padding-left: 10rem; */
 }
 
 .princesa-list {
-    text-align: left !important;
-    display: flex;
+  text-align: left !important;
+  display: flex;
 }
 
 .second-list {
-    align-content: flex-end;
+  align-content: flex-end;
 }
 
 .condoLogos {
-    max-height: 15vmin;
+  max-height: 15vmin;
 }
 
 .devLogoContainer {
-    width: 100%;
+  width: 100%;
 }
 
 .imageContainer {
-    align-self: stretch;    
+  align-self: stretch;
 }
 
 .imageContainer__end {
-    width: 100%;
-    display: flex;
-    align-self: stretch;
-    position: relative;
+  width: 100%;
+  display: flex;
+  align-self: stretch;
+  position: relative;
 }
 
 .sectionImageRight {
-    display: flex;
-    
-    align-self: flex-start;
-    padding-top: 2rem;
+  display: flex;
+  align-self: flex-start;
+  padding-top: 2rem;
 }
 
 .right-text {
-    justify-content: flex-start;
-    
-    float: right;
-    padding-right: initial;
-    min-width: 50%;
+  justify-content: flex-start;
+
+  float: right;
+  padding-right: initial;
+  min-width: 50%;
 }
 
 .sectionImageLeft {
-    display: flex;
-    align-items: flex-start;
-    max-width: 75%;
+  display: flex;
+  align-items: flex-start;
+  max-width: 75%;
 }
 
 .last-container {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .justify {
-    text-align: justify !important;
-    padding-inline-start: 20px !important;
+  text-align: justify !important;
+  padding-inline-start: 20px !important;
 }
 
 .list-align {
-    text-align: left !important;
+  text-align: left !important;
 }
