@@ -55,6 +55,7 @@
 
   .sectionImageLeft {
     margin-right: 0em;
+    object-fit: cover;
   }
 
   .left-text {
@@ -169,6 +170,7 @@
 
   .sectionImageLeft {
     margin-right: 0em;
+    object-fit: cover;
   }
 
   .left-text {
