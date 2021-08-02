@@ -354,8 +354,8 @@
   }
 
   .smallImage {
-    width: 33vw;
-    height: 29vw;
+    width: 40vw;
+    height: 37vw;
     object-fit: cover;
   }
 }
