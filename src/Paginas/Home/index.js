@@ -81,9 +81,9 @@ function Home(props) {
           </div>
         </div>
       </section>
-      <h2>Gallery</h2>
-      <h3>Condo 3 Bedroom 2 bathrooms</h3>
-      <section>
+      <section className="section" style={{ flexDirection: 'column' }}>
+        <h2>Gallery</h2>
+        <h3>Condo 3 Bedrooms, 2 Bathrooms</h3>
         <SlideShow>
           <img className="smallImage" src={condo_1} alt="" />
           <img className="smallImage" src={condo_2} alt="" />
@@ -93,12 +93,12 @@ function Home(props) {
           <img className="smallImage" src={condo_6} alt="" />
         </SlideShow>
       </section>
-      <section className="development-section">
+      <section className="development-section section" style={{ margin: '0' }}>
         <div>
           <h2 className="subTitle">{textContent[lang].housesText}</h2>
         </div>
       </section>
-      <section>
+      <section className="section">
         <SlideShow>
           <img className="smallImage" src={house_1} alt="" />
           <img className="smallImage" src={house_2} alt="" />

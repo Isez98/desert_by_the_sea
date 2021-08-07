@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import propTypes from 'prop-types';
+import './styles.css';
 
 const SlideShow = (props) => {
   let [imageID, setImageID] = useState(0);
+  let [showModal, setShowModal] = useState(false);
   function plusDivs(num) {
     if (imageID + num < 0) {
       return null;
@@ -14,9 +16,18 @@ const SlideShow = (props) => {
   }
 
   return (
-    <div style={{ width: '48%', height: '100%', marginBottom: '5VH' }} className="w3-content w3-display-container">
+    <div
+      style={{ height: '100%', marginBottom: '5VH' }}
+      className="w3-content w3-display-container container__slideshow"
+    >
       {props.children.map((element, index) => (
-        <div key={index} style={index === imageID ? { display: 'block' } : { display: 'none' }}>
+        <div
+          key={index}
+          style={index === imageID ? { display: 'block' } : { display: 'none' }}
+          onClick={() => {
+            setShowModal(true);
+          }}
+        >
           {element}
         </div>
       ))}
@@ -26,6 +37,17 @@ const SlideShow = (props) => {
       <button className="w3-button w3-black w3-display-right" onClick={() => plusDivs(1)}>
         &#10095;
       </button>
+      <div id="myModal" className="modal" style={showModal ? { display: 'block' } : { display: 'none' }}>
+        <span
+          className="close"
+          onClick={() => {
+            setShowModal(false);
+          }}
+        >
+          &times;
+        </span>
+        <img className="modal-content" id="img01" src={props.children[imageID].props.src} alt="" />
+      </div>
     </div>
   );
 };
