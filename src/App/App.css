@@ -3,13 +3,18 @@
   src: url('../Resources/Montserrat-Regular.ttf');
 }
 
+*,
+::before,
+::after {
+  box-sizing: initial;
+}
+
 .document {
   background-color: #d59241;
 }
 
 .App {
   text-align: center;
-  background-color: #fff !important;
 }
 
 .App-logo {
@@ -24,19 +29,21 @@
   }
 
   .last-container {
-    margin-bottom: 3rem;
+    margin-bottom: 8vw;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
   }
 
   .section {
-    margin-top: 5vh;
+    padding-top: 5vw;
+    margin-top: 0vw;
   }
 
   .first-container {
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 8vw;
   }
 
   .imageContainer__end {
@@ -45,7 +52,7 @@
 
   .sectionImageRight {
     margin: 0em;
-    max-width: 75%;
+    max-width: 80vw;
   }
 
   .imageContainer {
@@ -55,18 +62,26 @@
 
   .sectionImageLeft {
     margin-right: 0em;
+    max-width: 80vw;
     object-fit: cover;
   }
 
   .left-text {
     align-self: center;
-    width: 90%;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    min-width: 80vw;
   }
 
   .right-text {
     text-align: center;
-    margin-top: 3vh;
     margin-bottom: 5vh;
+  }
+
+  .right-text:first {
+    margin-top: 0px;
   }
 
   .travelbar {
@@ -81,35 +96,34 @@
     font-size: 3vw;
   }
 
-  h1 {
-    font-size: 3.5vw;
-  }
-
-  h2 {
-    font-size: 5vw;
-    font-weight: normal;
-    margin: 1rem;
-  }
-
   .hero-title {
     font-size: 7vw;
   }
 
   .hero-sub-title {
-    font-size: 4.25vw;
+    font-size: 5vw;
   }
 
   .subTitle {
     font-size: 4vw;
+    margin: 2vw 3vw;
   }
 
   .section-two-list {
     font-size: 3.5vw;
   }
 
+  .section-container {
+    padding-right: 0;
+  }
+
   .princesa-list {
     justify-content: center;
     font-size: 2.5vw;
+  }
+
+  .justify {
+    padding-inline-start: 0px;
   }
 
   .section-two-list > li {
@@ -129,6 +143,10 @@
     height: 62vw;
     object-fit: cover;
     margin: 0 0 2.5vw 0;
+  }
+
+  .development-section {
+    padding-top: 0px;
   }
 }
 
@@ -171,11 +189,12 @@
   .sectionImageLeft {
     margin-right: 0em;
     object-fit: cover;
+    max-width: 75%;
   }
 
   .left-text {
     align-self: center;
-    width: 90%;
+    width: 80vw;
   }
 
   .right-text {
@@ -194,16 +213,6 @@
 
   .paragraph {
     font-size: 3vw;
-  }
-
-  h1 {
-    font-size: 3.5vw;
-  }
-
-  h2 {
-    font-size: 3.5vw;
-    font-weight: normal;
-    margin: 1rem;
   }
 
   .hero-title {
@@ -253,7 +262,11 @@
   }
 
   .section {
-    margin-top: 15vh;
+    margin-top: 5vh;
+  }
+
+  .justify {
+    padding-inline-start: 20px;
   }
 
   .imageContainer__end {
@@ -267,6 +280,7 @@
 
   .sectionImageLeft {
     margin-right: 5em;
+    max-width: 75%;
   }
 
   .first-container {
@@ -301,16 +315,6 @@
     font-size: 3vw;
   }
 
-  h1 {
-    font-size: 3.5vw;
-  }
-
-  h2 {
-    font-size: 2vw;
-    font-weight: normal;
-    margin: 1rem;
-  }
-
   .hero-title {
     font-size: 3.5vw;
   }
@@ -343,6 +347,14 @@
     margin-top: 2.75vh;
   }
 
+  .last-container {
+    margin: 5vw 0 5vw 6vw;
+  }
+
+  .section-container {
+    padding-right: 0px;
+  }
+
   /* House Classes */
 
   .houseImagesRow {
@@ -354,8 +366,8 @@
   }
 
   .smallImage {
-    width: 33vw;
-    height: 29vw;
+    width: 40vw;
+    height: 37vw;
     object-fit: cover;
   }
 }
@@ -364,7 +376,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 4rem;
   background-color: rgb(97, 173, 206);
 }
 
@@ -472,7 +483,6 @@
 .hero {
   position: relative;
   opacity: 0.9;
-  top: -0.75rem;
   width: 100%;
   min-height: 95vh;
   background-repeat: no-repeat;
@@ -535,6 +545,9 @@
   text-align: center;
   margin-right: 0 !important;
   margin-left: 0 !important;
+  margin: 3% 0;
+  text-transform: uppercase;
+  font-weight: bolder;
 }
 
 .hero-sub-title {
@@ -545,25 +558,31 @@
   margin-left: 0 !important;
 }
 
-.hero-title {
-  margin: 3% 0;
-  text-transform: uppercase;
-}
-
 .section {
   width: 100%;
   display: flex;
   color: black;
 }
 
+.section:nth-child(even) {
+  background-color: #fff;
+}
+
+.section:nth-child(odd) {
+  color: #fff;
+}
+
 .development-section {
   display: inline-table;
+  width: 100%;
+  background-color: #fff;
 }
 
 .section-two-list {
-  max-width: 70rem;
+  max-width: 70vw;
   text-align: justify;
   margin: 0;
+  padding-left: 10px;
 }
 
 .section-container {
@@ -572,7 +591,6 @@
   margin-left: auto;
   margin-right: auto;
   padding-left: 0px;
-  padding-right: 20px;
 }
 
 .left-text {
@@ -627,16 +645,10 @@
 .sectionImageLeft {
   display: flex;
   align-items: flex-start;
-  max-width: 75%;
-}
-
-.last-container {
-  margin-bottom: 3rem;
 }
 
 .justify {
-  text-align: justify !important;
-  padding-inline-start: 20px !important;
+  text-align: justify;
 }
 
 .list-align {
