@@ -26,7 +26,8 @@ let en = {
     court: 'Volleyball court in the sand',
     palapas: 'Palapas and lounge chairs at the beach'
   },
-  housesText: 'We also have excellent houses at Cholla Bay'
+  housesText: 'We also have excellent houses at Cholla Bay',
+  gallery: 'Gallery'
 };
 let es = {
   title: 'Desert By The Sea Rentals',
@@ -56,7 +57,8 @@ let es = {
     court: 'Cancha de vóleibol en la arena',
     palapas: 'Palapas y camastros en la playa'
   },
-  housesText: 'Además, contamos con casas excelentes en la Bahía de la Cholla'
+  housesText: 'Además, contamos con casas excelentes en la Bahía de la Cholla',
+  gallery: 'Galería'
 };
 export default {
   default: en,

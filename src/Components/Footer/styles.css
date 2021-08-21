@@ -5,21 +5,18 @@
     text-align: center;
     flex-direction: column;
     font-size: 1.5vh;
+    padding: 1.5vw 0 3vw 0;
   }
 
-  .footer > div {
-    margin: 0.25vh 0 1vh 0;
-  }
-
-  .footer > div > div {
-    margin: 1.75vh 0 1vh 0;
+  .footer-section div {
+    margin: 1.25vw 0 0 0;
   }
 
   .facebook-logo {
     height: 4.5vw;
     margin-left: 1vw;
     position: relative;
-    top: 0.5vh;
+    top: 0vh;
   }
 }
 
@@ -30,21 +27,18 @@
     text-align: center;
     flex-direction: column;
     font-size: 2vw;
+    padding: 1.25vw 0 1.25vw 0;
   }
 
-  .footer > div {
-    margin: 0.25vh 0 1vh 0;
-  }
-
-  .footer > div > div {
-    margin: 2vh 0 1.75vh 0;
+  .footer-section div {
+    margin: 1vw 0 0 0;
   }
 
   .facebook-logo {
     height: 3vw;
     margin-left: 1vw;
     position: relative;
-    top: 0.75vh;
+    top: 0vh;
   }
 }
 
@@ -58,7 +52,7 @@
     height: 1.75vw;
     margin-left: 0.5vw;
     position: relative;
-    bottom: 0.25vh;
+    top: 0.1vw;
   }
 
   .footer-section {
@@ -84,8 +78,6 @@
 }
 
 .footer {
-  padding-bottom: 1.5vmin;
-  padding-top: 1vmin;
   background-color: rgb(97, 173, 206);
   color: #fff;
 }

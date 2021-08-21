@@ -29,19 +29,21 @@
   }
 
   .last-container {
-    margin-bottom: 3rem;
+    margin-bottom: 8vw;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
   }
 
   .section {
-    margin-top: 5vh;
+    padding-top: 5vw;
+    margin-top: 0vw;
   }
 
   .first-container {
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 8vw;
   }
 
   .imageContainer__end {
@@ -75,8 +77,11 @@
 
   .right-text {
     text-align: center;
-    margin-top: 3vh;
     margin-bottom: 5vh;
+  }
+
+  .right-text:first {
+    margin-top: 0px;
   }
 
   .travelbar {
@@ -91,16 +96,6 @@
     font-size: 3vw;
   }
 
-  h1 {
-    font-size: 3.5vw;
-  }
-
-  h2 {
-    font-size: 5vw;
-    font-weight: normal;
-    margin: 1rem;
-  }
-
   .hero-title {
     font-size: 7vw;
   }
@@ -111,6 +106,7 @@
 
   .subTitle {
     font-size: 4vw;
+    margin: 2vw 3vw;
   }
 
   .section-two-list {
@@ -147,6 +143,10 @@
     height: 62vw;
     object-fit: cover;
     margin: 0 0 2.5vw 0;
+  }
+
+  .development-section {
+    padding-top: 0px;
   }
 }
 
@@ -213,16 +213,6 @@
 
   .paragraph {
     font-size: 3vw;
-  }
-
-  h1 {
-    font-size: 3.5vw;
-  }
-
-  h2 {
-    font-size: 3.5vw;
-    font-weight: normal;
-    margin: 1rem;
   }
 
   .hero-title {
@@ -325,16 +315,6 @@
     font-size: 3vw;
   }
 
-  h1 {
-    font-size: 3.5vw;
-  }
-
-  h2 {
-    font-size: 2vw;
-    font-weight: normal;
-    margin: 1rem;
-  }
-
   .hero-title {
     font-size: 3.5vw;
   }
@@ -396,7 +376,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 4rem;
   background-color: rgb(97, 173, 206);
 }
 
@@ -600,9 +579,10 @@
 }
 
 .section-two-list {
-  max-width: 70rem;
+  max-width: 70vw;
   text-align: justify;
   margin: 0;
+  padding-left: 10px;
 }
 
 .section-container {

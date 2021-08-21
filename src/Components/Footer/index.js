@@ -15,8 +15,8 @@ const Footer = (props) => {
           {textContent[pageLang].social}
           <FacebookLogo></FacebookLogo>
         </div>
+        <div className="footer-company">{textContent[pageLang].company}</div>
       </div>
-      <div className="footer-company">{textContent[pageLang].company}</div>
     </div>
   );
 };
