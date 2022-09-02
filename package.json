@@ -10,11 +10,12 @@
     "aws-sdk": "^2.674.0",
     "axios": "^0.21.1",
     "jquery": "^3.5.1",
+    "nth-check": "^2.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-grid-gallery": "^0.5.5",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "^4.0.3",
+    "react-scripts": "^5.0.1",
     "react-simple-image-slider": "^1.0.3",
     "react-slideshow": "0.0.1"
   },
