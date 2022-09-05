@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React, { ReactElement, useState } from 'react'
 import propTypes from 'prop-types'
 import './styles.css'
 
-const SlideShow = (props: { children: any[] }) => {
+const SlideShow = (props: { children: ReactElement[] }) => {
   const [imageID, setImageID] = useState(0)
   const [showModal, setShowModal] = useState(false)
   function plusDivs(num: number) {
@@ -20,7 +20,7 @@ const SlideShow = (props: { children: any[] }) => {
       style={{ height: '100%', marginBottom: '5VH' }}
       className="w3-content w3-display-container container__slideshow"
     >
-      {props.children.map((element: any, index: number) => (
+      {props.children.map((element: ReactElement, index: number) => (
         <div
           key={index}
           style={index === imageID ? { display: 'block' } : { display: 'none' }}

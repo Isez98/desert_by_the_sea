@@ -1,3 +1,3 @@
 export interface IPagesProps {
-  lang: string
+  lang: 'en' | 'es'
 }

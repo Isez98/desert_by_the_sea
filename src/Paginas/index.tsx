@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useMemo, useState } from 'react'
+import React, { useContext, useEffect, useMemo } from 'react'
 import { useHistory, useLocation } from 'react-router-dom'
 import DetectLang from '../Components/DetectLang'
 import Footer from '../Components/Footer'
@@ -15,23 +15,29 @@ function useQuery() {
 const Page = () => {
   const query = useQuery()
   const history = useHistory()
-  const { lang, setLang } = useContext(GlobalContext)
+  const { setLang } = useContext(GlobalContext)
 
   useEffect(() => {
-    if (!query.get('lang')) {
-      setLang(DetectLang as unknown as 'en' | 'es')
+    if (query.get('lang') && query.get('lang') !== undefined) {
+      setLang(query.get('lang') as 'en' | 'es')
+    } else {
+      setLang(DetectLang() as unknown as 'en' | 'es')
       history.push({
         pathname: '/',
-        search: `?lang=${lang}`,
+        search: `?lang=${DetectLang()}`,
       })
     }
-  }, [query, lang])
+  }, [query])
 
   return (
     <div className="App">
       <div className="App-header">
-        <Nav />
-        <Home lang={lang} />
+        {query.get('lang') && (
+          <>
+            <Nav />
+            <Home lang={query.get('lang') as 'en' | 'es'} />
+          </>
+        )}
       </div>
       <Footer />
     </div>

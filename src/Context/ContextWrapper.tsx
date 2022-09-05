@@ -1,11 +1,8 @@
-import React, { useState } from 'react'
-import DetectLang from '../Components/DetectLang'
+import React, { PropsWithChildren, useState } from 'react'
 import GlobalContext from './GlobalContext'
 
-export const ContextWrapper = (props: any) => {
-  const [lang, setLang] = useState<'en' | 'es'>(
-    DetectLang as unknown as 'en' | 'es'
-  )
+export const ContextWrapper = (props: PropsWithChildren) => {
+  const [lang, setLang] = useState<string>('')
 
   return (
     <GlobalContext.Provider
