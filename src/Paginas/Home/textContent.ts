@@ -1,4 +1,6 @@
-let en = {
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
+const en: any = {
   title: 'Desert By The Sea Rentals',
   subTitle: 'Come stay at one of the best Rental Condominiums in Rocky Point!',
   developments: 'Desert By The Sea has condos at Princesa De Peñasco',
@@ -6,8 +8,10 @@ let en = {
   listWhy: {
     deal: 'Direct deal: When booking with us, our clients will be in direct contact with the manager.',
     rates: 'Fair rates: Desert By The Sea Rentals manages competetive rates.',
-    honesty: 'Honesty: We believe that honesty builds great relations with our clients',
-    location: 'Great location: Our condos are all located at a walking distance to the beach'
+    honesty:
+      'Honesty: We believe that honesty builds great relations with our clients',
+    location:
+      'Great location: Our condos are all located at a walking distance to the beach',
   },
   headingMan: 'What Princesa Offers',
   paragraphMan:
@@ -24,21 +28,25 @@ let en = {
     kiddiePools: '2 kiddie pools',
     jacuzzi: '1 jacuzzi',
     court: 'Volleyball court in the sand',
-    palapas: 'Palapas and lounge chairs at the beach'
+    palapas: 'Palapas and lounge chairs at the beach',
   },
   housesText: 'We also have excellent houses at Cholla Bay',
-  gallery: 'Gallery'
-};
-let es = {
+  gallery: 'Gallery',
+}
+const es: any = {
   title: 'Desert By The Sea Rentals',
-  subTitle: 'Ven y hospédate en uno de los mejores condominios de Puerto Peñasco',
+  subTitle:
+    'Ven y hospédate en uno de los mejores condominios de Puerto Peñasco',
   developments: 'Desert By The Sea tiene condominios en Princesa De Peñasco',
   headingWhy: '¿Por qué quedarse con nosotros?',
   listWhy: {
     deal: 'Trato directo: Cuando reservan con nosotros, nuestros clientes entran en contacto directo con el gerente.',
-    rates: 'Tarifas justas: Desert By The Sea Rentals maneja precios competitivos.',
-    honesty: 'Honestidad: Nosotros creemos en que la honestidad fomenta buenas relaciones con nuestros clientes.',
-    location: 'Gran ubicación: Todos nuestros condominios se ubican frente a la playa.'
+    rates:
+      'Tarifas justas: Desert By The Sea Rentals maneja precios competitivos.',
+    honesty:
+      'Honestidad: Nosotros creemos en que la honestidad fomenta buenas relaciones con nuestros clientes.',
+    location:
+      'Gran ubicación: Todos nuestros condominios se ubican frente a la playa.',
   },
   headingMan: 'Lo que ofrece Princesa',
   paragraphMan:
@@ -55,13 +63,12 @@ let es = {
     kiddiePools: '2 albercas infantiles',
     jacuzzi: '1 jacuzzi',
     court: 'Cancha de vóleibol en la arena',
-    palapas: 'Palapas y camastros en la playa'
+    palapas: 'Palapas y camastros en la playa',
   },
   housesText: 'Además, contamos con casas excelentes en la Bahía de la Cholla',
-  gallery: 'Galería'
-};
+  gallery: 'Galería',
+}
 export default {
-  default: en,
   es,
-  en
-};
+  en,
+}
