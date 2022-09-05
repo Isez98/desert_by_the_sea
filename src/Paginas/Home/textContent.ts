@@ -1,4 +1,4 @@
-let en = {
+const en: any = {
   title: 'Desert By The Sea Rentals',
   subTitle: 'Come stay at one of the best Rental Condominiums in Rocky Point!',
   developments: 'Desert By The Sea has condos at Princesa De Peñasco',
@@ -29,7 +29,7 @@ let en = {
   housesText: 'We also have excellent houses at Cholla Bay',
   gallery: 'Gallery'
 };
-let es = {
+const es: any = {
   title: 'Desert By The Sea Rentals',
   subTitle: 'Ven y hospédate en uno de los mejores condominios de Puerto Peñasco',
   developments: 'Desert By The Sea tiene condominios en Princesa De Peñasco',

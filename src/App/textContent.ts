@@ -1,11 +1,11 @@
-let en = {
+const en = {
   home: 'Home',
   condos: 'Condos',
   about: 'About',
   contact: 'Contact',
   announcement: `Page in construction... More photos coming soon!`
 };
-let es = {
+const es = {
   home: 'Inicio',
   condos: 'Condos',
   about: 'Acerca De',

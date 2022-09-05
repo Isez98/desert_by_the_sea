@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Post from '../Post';
 
 const galleryTitle = {
@@ -9,15 +9,19 @@ const galleryTitle = {
   marginInlineStart: '0px',
   marginInlineEnd: '0px',
   fontWeight: 'bold'
+};
+
+interface IPosts {
+  posts: any;
 }
 
-export default function Posts({ posts }) {
-  return posts.map((element, index) => (
+const Posts: React.FC<IPosts> = ({ posts }) =>
+  posts.map((element: any, index: number) => (
     <div key={index}>
       <span style={galleryTitle}>{element.title}</span>
-      <h2 >{posts[element] && posts[element].title}</h2>
-      <Post imageSrc={element.srcList}></Post>
+      <h2>{posts[element] && posts[element].title}</h2>
+      <Post imageSrc={['']}></Post>
     </div>
-  )
-  )
-}
+  ));
+
+export default Posts;

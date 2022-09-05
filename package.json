@@ -11,11 +11,12 @@
     "axios": "^0.21.1",
     "jquery": "^3.5.1",
     "nth-check": "^2.0.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-grid-gallery": "^0.5.5",
     "react-router-dom": "^5.1.2",
     "react-scripts": "^5.0.1",
+    "react-scripts-ts": "^3.1.0",
     "react-simple-image-slider": "^1.0.3",
     "react-slideshow": "0.0.1"
   },
@@ -23,7 +24,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "lint": "eslint ./src",
-    "format": "prettier --write \"./src/**/*.{js,json}\"",
+    "format": "prettier --write \"./src/**/*.{js,json, ts, tsx}\"",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -40,9 +41,14 @@
     ]
   },
   "devDependencies": {
+    "@types/jest": "^29.0.0",
+    "@types/jquery": "^3.5.14",
+    "@types/node": "^18.7.14",
+    "@types/react": "^18.0.18",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-react": "^7.19.0",
     "prettier": "^2.0.5",
-    "prop-types": "^15.7.2"
+    "prop-types": "^15.7.2",
+    "typescript": "^4.8.2"
   }
 }

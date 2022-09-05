@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import '../../App/App.css';
 import textContent from './textContent';
-import propTypes from 'prop-types';
 import image1 from '../../Resources/Condo_Photos/pic-right.jpeg';
 import image2 from '../../Resources/Condo_Photos/pic-left.jpeg';
 import princesaLogo from '../../Resources/Condo_Photos/pdp_logo.png';
@@ -18,45 +17,44 @@ import condo_3 from '../../Resources/3Bd-2Bt/3.jpeg';
 import condo_4 from '../../Resources/3Bd-2Bt/4.jpeg';
 import condo_5 from '../../Resources/3Bd-2Bt/5.jpeg';
 import condo_6 from '../../Resources/3Bd-2Bt/6.jpeg';
-function Home(props) {
-  let lang = props.hash;
+import Hero from '../../Components/Hero';
+import GlobalContext from '../../Context/GlobalContext';
+
+const Home: React.FC = () => {
+  const { lang } = useContext(GlobalContext)
+
   return (
     <div>
-      <div className="hero flex-center">
-        <div className="hero-message">
-          <h1 className="hero-title">{textContent[lang].title}</h1>
-          <h2 className="hero-sub-title">{textContent[lang].subTitle}</h2>
-        </div>
-      </div>
+     <Hero />
       <section className="development-section">
         <div>
           <div className="devLogoContainer">
             <img className="condoLogos" src={princesaLogo} alt=""></img>
           </div>
-          <h2 className="subTitle">{textContent[lang].developments}</h2>
+          <h2 className="subTitle">{textContent[lang as 'en' | 'es'].developments}</h2>
         </div>
       </section>
       <section className="section">
         <div className="section-container first-container">
           <div className="left-text">
-            <h2>{textContent[lang].headingMan}</h2>
-            <p className="section-two-list justify">{textContent[lang].paragraphMan}</p>
+            <h2>{textContent[lang as 'en' | 'es'].headingMan}</h2>
+            <p className="section-two-list justify">{textContent[lang as 'en' | 'es'].paragraphMan}</p>
             <div className="princesa-list">
               <ul className="first-list">
-                <li>{textContent[lang].listPrincesa.security}</li>
-                <li>{textContent[lang].listPrincesa.parking}</li>
-                <li>{textContent[lang].listPrincesa.restaurant}</li>
-                <li>{textContent[lang].listPrincesa.adultPool}</li>
-                <li>{textContent[lang].listPrincesa.pools}</li>
-                <li>{textContent[lang].listPrincesa.kiddiePools}</li>
+                <li>{textContent[lang as 'en' | 'es'].listPrincesa.security}</li>
+                <li>{textContent[lang as 'en' | 'es'].listPrincesa.parking}</li>
+                <li>{textContent[lang as 'en' | 'es'].listPrincesa.restaurant}</li>
+                <li>{textContent[lang as 'en' | 'es'].listPrincesa.adultPool}</li>
+                <li>{textContent[lang as 'en' | 'es'].listPrincesa.pools}</li>
+                <li>{textContent[lang as 'en' | 'es'].listPrincesa.kiddiePools}</li>
               </ul>
               <ul className="second-list">
-                <li>{textContent[lang].listPrincesa.jacuzzi}</li>
-                <li>{textContent[lang].listPrincesa.gym}</li>
-                <li>{textContent[lang].listPrincesa.grill}</li>
-                <li>{textContent[lang].listPrincesa.store}</li>
-                <li>{textContent[lang].listPrincesa.court}</li>
-                <li>{textContent[lang].listPrincesa.palapas}</li>
+                <li>{textContent[lang as 'en' | 'es'].listPrincesa.jacuzzi}</li>
+                <li>{textContent[lang as 'en' | 'es'].listPrincesa.gym}</li>
+                <li>{textContent[lang as 'en' | 'es'].listPrincesa.grill}</li>
+                <li>{textContent[lang as 'en' | 'es'].listPrincesa.store}</li>
+                <li>{textContent[lang as 'en' | 'es'].listPrincesa.court}</li>
+                <li>{textContent[lang as 'en' | 'es'].listPrincesa.palapas}</li>
               </ul>
             </div>
           </div>
@@ -71,18 +69,18 @@ function Home(props) {
             <img className="sectionImageLeft" src={image2} alt=""></img>
           </div>
           <div className="right-text">
-            <h2>{textContent[lang].headingWhy}</h2>
+            <h2>{textContent[lang as 'en' | 'es'].headingWhy}</h2>
             <ul className="section-two-list list-align">
-              <li>{textContent[lang].listWhy.deal}</li>
-              <li>{textContent[lang].listWhy.rates}</li>
-              <li>{textContent[lang].listWhy.honesty}</li>
-              <li>{textContent[lang].listWhy.location}</li>
+              <li>{textContent[lang as 'en' | 'es'].listWhy.deal}</li>
+              <li>{textContent[lang as 'en' | 'es'].listWhy.rates}</li>
+              <li>{textContent[lang as 'en' | 'es'].listWhy.honesty}</li>
+              <li>{textContent[lang as 'en' | 'es'].listWhy.location}</li>
             </ul>
           </div>
         </div>
       </section>
       <section className="section" style={{ flexDirection: 'column' }}>
-        <h2>{textContent[lang].gallery}</h2>
+        <h2>{textContent[lang as 'en' | 'es'].gallery}</h2>
         <SlideShow>
           <img className="smallImage" src={condo_1} alt="" />
           <img className="smallImage" src={condo_2} alt="" />
@@ -110,10 +108,5 @@ function Home(props) {
     </div>
   );
 }
-
-Home.propTypes = {
-  props: propTypes.object,
-  hash: propTypes.string
-};
 
 export default Home;
