@@ -1,8 +1,8 @@
-import AWS from 'aws-sdk';
-// **DO THIS**:
-//   Replace BUCKET_NAME with the bucket name.
-//
-var albumBucketName = 'dbtsr-albums';
+// import AWS from 'aws-sdk'
+// // **DO THIS**:
+// //   Replace BUCKET_NAME with the bucket name.
+// //
+// const albumBucketName = 'dbtsr-albums'
 
 // **DO THIS**:
 //   Replace this block of code with the sample code located at:
