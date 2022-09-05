@@ -1,19 +1,22 @@
 {
-    "extends" : [
-        "prettier",
-        "eslint:recommended",
-        "plugin:react/recommended"
-    ],
-    "parserOptions": {
-        "ecmaVersion": 8,
-        "sourceType": "module",
-        "ecmaFeatures": {
-            "jsx": true
-        }
+  "extends": [
+    "prettier",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "env": {
-        "browser": true,
-        "node": true,
-        "jasmine": true
-      }
+    "parser": "@typescript-eslint/parser"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jasmine": true
+  }
 }
